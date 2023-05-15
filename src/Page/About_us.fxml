@@ -40,7 +40,7 @@
       </Pane>
       <ImageView fitHeight="253.0" fitWidth="1000.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="im-about_us.jpg" />
+            <Image url="/Page/im-about_us.jpg" />
          </image>
       </ImageView>
       <Pane layoutX="35.0" layoutY="533.0" prefHeight="227.0" prefWidth="317.0" style="-fx-background-color: rgba(255, 255, 255, 1);" />
