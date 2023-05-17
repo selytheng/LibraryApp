@@ -13,20 +13,20 @@
 <?import javafx.scene.shape.Polyline?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c58875;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="1000.0" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #c58875;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <bottom>
       <Region prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
    </bottom>
    <center>
-      <HBox alignment="CENTER_LEFT" maxWidth="300.0" prefHeight="270.0" prefWidth="250.0">
+      <HBox alignment="CENTER" maxWidth="300.0" prefHeight="270.0" prefWidth="250.0" BorderPane.alignment="CENTER">
          <children>
-            <VBox alignment="TOP_CENTER" maxHeight="175.0" maxWidth="232.0" prefHeight="175.0" prefWidth="232.0">
+            <VBox alignment="TOP_CENTER" maxHeight="175.0" maxWidth="232.0" minWidth="330.0" prefHeight="175.0" prefWidth="330.0">
                <children>
                   <HBox alignment="TOP_CENTER" prefWidth="200.0">
                      <children>
                         <Label alignment="CENTER" style="-fx-underline: true;" text="Book Information" textAlignment="CENTER" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="20.0" />
+                              <Font name="System Bold" size="24.0" />
                            </font>
                            <HBox.margin>
                               <Insets top="10.0" />
@@ -41,14 +41,14 @@
                      <children>
                         <Label alignment="CENTER" text="Title: " textFill="WHITE">
                            <font>
-                              <Font size="15.0" />
+                              <Font size="18.0" />
                            </font>
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
                         </Label>
                         <Region HBox.hgrow="ALWAYS" />
-                        <TextField style="-fx-background-color: #FFC9A5;">
+                        <TextField prefHeight="25.0" prefWidth="210.0" style="-fx-background-color: #FFC9A5;">
                            <HBox.margin>
                               <Insets bottom="5.0" top="5.0" />
                            </HBox.margin></TextField>
@@ -61,14 +61,14 @@
                      <children>
                         <Label text="Author:" textFill="WHITE">
                            <font>
-                              <Font size="15.0" />
+                              <Font size="18.0" />
                            </font>
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
                         </Label>
                         <Region HBox.hgrow="ALWAYS" />
-                        <TextField alignment="CENTER" style="-fx-background-color: #FFC9A5;">
+                        <TextField prefHeight="25.0" prefWidth="210.0" style="-fx-background-color: #FFC9A5;">
                            <HBox.margin>
                               <Insets bottom="5.0" top="5.0" />
                            </HBox.margin></TextField>
@@ -78,14 +78,14 @@
                      <children>
                         <Label text="Released:" textFill="WHITE">
                            <font>
-                              <Font size="15.0" />
+                              <Font size="18.0" />
                            </font>
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
                         </Label>
                         <Region HBox.hgrow="ALWAYS" />
-                        <TextField style="-fx-background-color: #FFC9A5;">
+                        <TextField prefHeight="25.0" prefWidth="210.0" style="-fx-background-color: #FFC9A5;">
                            <HBox.margin>
                               <Insets bottom="5.0" top="5.0" />
                            </HBox.margin></TextField>
@@ -95,14 +95,14 @@
                      <children>
                         <Label text="Category:" textFill="WHITE">
                            <font>
-                              <Font size="15.0" />
+                              <Font size="18.0" />
                            </font>
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
                         </Label>
                         <Region HBox.hgrow="ALWAYS" />
-                        <TextField style="-fx-background-color: #FFC9A5;">
+                        <TextField prefHeight="25.0" prefWidth="210.0" style="-fx-background-color: #FFC9A5;">
                            <HBox.margin>
                               <Insets bottom="5.0" top="5.0" />
                            </HBox.margin></TextField>
@@ -126,7 +126,7 @@
                   <Insets />
                </opaqueInsets>
                <HBox.margin>
-                  <Insets right="80.0" />
+                  <Insets />
                </HBox.margin>
             </VBox>
          </children>
@@ -134,57 +134,30 @@
             <Insets />
          </opaqueInsets>
          <BorderPane.margin>
-            <Insets left="30.0" top="10.0" />
+            <Insets left="75.0" />
          </BorderPane.margin>
       </HBox>
    </center>
-   <left>
-      <HBox maxHeight="250.0" prefHeight="251.0" prefWidth="175.0" BorderPane.alignment="CENTER">
-         <BorderPane.margin>
-            <Insets left="30.0" />
-         </BorderPane.margin>
-         <children>
-            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-            <Line endX="-100.0" endY="251.0" startX="-100.0" />
-            <VBox alignment="CENTER" maxHeight="250.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #8D5645; -fx-background-radius: 3px;">
-               <children>
-                  <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
-                  <Line endX="70.0" startX="-100.0" />
-                  <Label text="Book Cover" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="15.0" />
-                     </font>
-                     <VBox.margin>
-                        <Insets bottom="115.0" top="115.0" />
-                     </VBox.margin>
-                  </Label>
-                  <Line endX="70.0" startX="-100.0" />
-               </children>
-            </VBox>
-            <Line endX="-100.0" endY="253.0" startX="-100.0" />
-         </children>
-      </HBox>
-   </left>
    <top>
       <VBox alignment="CENTER" BorderPane.alignment="CENTER_RIGHT">
          <children>
-            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0">
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                <children>
-                  <Polyline fill="#ffe7e7" points="-34.0, -55.5, -13.0, -51.5, -13.0, -61.5, -34.0, -55.5" smooth="false" strokeType="INSIDE" />
+                  <Polyline fill="#ffe7e7" points="-34.0, -55.5, -13.0, -51.5, -13.0, -61.5, -34.0, -55.5" strokeType="INSIDE" />
                   <Label text="Add new Book" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="18.0" />
+                        <Font name="System Bold" size="24.0" />
                      </font>
                      <HBox.margin>
-                        <Insets left="10.0" />
+                        <Insets left="15.0" />
                      </HBox.margin>
                   </Label>
                   <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-                  <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                  <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
                      <children>
-                        <Circle fill="WHITE" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Circle fill="WHITE" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Circle fill="WHITE" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
                      </children>
                      <opaqueInsets>
                         <Insets />
@@ -194,15 +167,53 @@
                <opaqueInsets>
                   <Insets left="20.0" right="20.0" />
                </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
             </HBox>
-            <Line endX="499.29290771484375" endY="-0.41421353816986084" startX="-26.363967895507812" startY="-1.1214367151260376" VBox.vgrow="ALWAYS" />
+            <Line endX="502.07708740234375" endY="23.171571731567383" startX="-369.2158203125" startY="23.878679275512695" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Line>
          </children>
          <opaqueInsets>
             <Insets left="20.0" right="20.0" />
          </opaqueInsets>
          <padding>
-            <Insets left="20.0" right="20.0" top="10.0" />
+            <Insets left="20.0" right="20.0" top="25.0" />
          </padding>
       </VBox>
    </top>
+   <left>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="BOTTOM_LEFT">
+         <BorderPane.margin>
+            <Insets left="100.0" />
+         </BorderPane.margin>
+         <children>
+            <Line endX="-100.0" endY="420.0" startX="-99.70710754394531" startY="-15.328426361083984" />
+            <VBox alignment="CENTER" maxHeight="10.0" prefHeight="550.0" prefWidth="282.0" style="-fx-background-color: #6e4d43;">
+               <children>
+                  <Line endX="180.0" startX="-100.0" strokeWidth="2.0" />
+                  <Label text="Book Cover" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="200.0" top="200.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Line endX="180.0" startX="-100.0" strokeWidth="2.0" />
+               </children>
+            </VBox>
+            <Line endX="-100.0" endY="420.0" startX="-99.70710754394531" startY="-15.328426361083984" />
+         </children>
+      </HBox>
+   </left>
+   <right>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </right>
 </BorderPane>
