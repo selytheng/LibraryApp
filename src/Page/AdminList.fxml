@@ -12,34 +12,34 @@
 <?import javafx.scene.shape.Polyline?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="710.0" style="-fx-background-color: #c58875;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="1000.0" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #c58875;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0">
          <children>
             <Polyline fill="#ffe7e7" points="-34.0, -55.5, -13.0, -51.5, -13.0, -61.5, -34.0, -55.5" smooth="false" strokeType="INSIDE" />
-            <Label prefHeight="21.0" prefWidth="106.0" text="Admin's List" textFill="WHITE">
+            <Label prefHeight="35.0" prefWidth="131.0" text="Admin's List" textFill="WHITE">
                <font>
-                  <Font size="18.0" />
+                  <Font size="24.0" />
                </font>
                <HBox.margin>
                   <Insets left="10.0" />
                </HBox.margin></Label>
             <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-            <TextField opacity="0.85" promptText="All Users" style="-fx-border-radius: 50px; -fx-background-radius: 10px;">
+            <TextField minHeight="35.0" minWidth="200.0" opacity="0.85" promptText="All Users" style="-fx-border-radius: 50px; -fx-background-radius: 10px;">
                <HBox.margin>
                   <Insets right="10.0" />
                </HBox.margin>
             </TextField>
-            <TextField opacity="0.85" promptText="Quick Search..." style="-fx-background-radius: 10px;">
+            <TextField minHeight="35.0" minWidth="200.0" opacity="0.85" promptText="Quick Search..." style="-fx-background-radius: 10px;">
                <HBox.margin>
                   <Insets right="-45.0" />
                </HBox.margin>
             </TextField>
             <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Circle fill="WHITE" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="WHITE" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="WHITE" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
                </children>
             </VBox>
          </children>
@@ -52,53 +52,53 @@
       <Region prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
    </bottom>
    <center>
-      <VBox maxHeight="350.0" prefHeight="260.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox maxHeight="500.0" BorderPane.alignment="CENTER">
          <children>
             <HBox>
                <children>
                   <Label style="-fx-underline: true;" text="No" textFill="WHITE">
                      <HBox.margin>
-                        <Insets left="30.0" right="50.0" />
+                        <Insets left="30.0" right="71.0" />
                      </HBox.margin>
                      <font>
-                        <Font name="System Bold" size="15.0" />
+                        <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
                   <Label style="-fx-underline: true;" text="Username" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="15.0" />
+                        <Font name="System Bold" size="18.0" />
                      </font>
                      <HBox.margin>
-                        <Insets right="63.0" />
+                        <Insets right="117.0" />
                      </HBox.margin>
                   </Label>
                   <Label style="-fx-underline: true;" text="Email" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="15.0" />
+                        <Font name="System Bold" size="18.0" />
                      </font>
                      <HBox.margin>
-                        <Insets right="158.0" />
+                        <Insets right="236.0" />
                      </HBox.margin>
                   </Label>
                   <Label style="-fx-underline: true;" text="ID" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="15.0" />
+                        <Font name="System Bold" size="18.0" />
                      </font>
                      <HBox.margin>
-                        <Insets right="93.0" />
+                        <Insets right="128.0" />
                      </HBox.margin>
                   </Label>
                   <Label style="-fx-underline: true;" text="Dep" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="15.0" />
+                        <Font name="System Bold" size="18.0" />
                      </font>
                      <HBox.margin>
-                        <Insets right="42.0" />
+                        <Insets right="61.0" />
                      </HBox.margin>
                   </Label>
                   <Label style="-fx-underline: true;" text="Duties" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="15.0" />
+                        <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
                </children>
@@ -106,38 +106,56 @@
                   <Insets bottom="20.0" />
                </VBox.margin>
             </HBox>
-            <TextField maxHeight="100.0" mouseTransparent="true" prefHeight="85.0" style="-fx-background-color: #FFC9A5; -fx-background-radius: 5px;" text="01                Se LyTheng                                                                                  e20200449                GIC                Leader">
+            <TextField maxHeight="100.0" mouseTransparent="true" prefHeight="85.0" promptText="                                                                                            " style="-fx-background-color: #FFC9A5; -fx-background-radius: 5px;" text="01                Se LyTheng                                                                                            e20200449                GIC                Leader">
                <VBox.margin>
-                  <Insets bottom="5.0" left="30.0" right="30.0" />
+                  <Insets bottom="20.0" left="30.0" right="30.0" />
                </VBox.margin>
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
                </cursor>
+               <font>
+                  <Font size="16.0" />
+               </font>
             </TextField>
-            <TextField maxHeight="100.0" mouseTransparent="true" prefHeight="85.0" style="-fx-background-color: #FFC9A5; -fx-background-radius: 5px;" text="02                Pom Mouylang                mouylangpom@gmail.com                e20201008                GIC                Member">
+            <TextField maxHeight="100.0" mouseTransparent="true" prefHeight="85.0" promptText="                " style="-fx-background-color: #FFC9A5; -fx-background-radius: 5px;" text="02                Pom Mouylang                     mouylangpom@gmail.com                     e20201008                GIC                Member">
                <VBox.margin>
-                  <Insets bottom="5.0" left="30.0" right="30.0" />
+                  <Insets bottom="20.0" left="30.0" right="30.0" />
                </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
             </TextField>
-            <TextField maxHeight="100.0" mouseTransparent="true" prefHeight="85.0" promptText="                                                                                  " style="-fx-background-color: #FFC9A5; -fx-background-radius: 5px;" text="03                Seav Muy                                                                                     e20201819                GIC                Member">
+            <TextField maxHeight="100.0" mouseTransparent="true" prefHeight="85.0" promptText="                " style="-fx-background-color: #FFC9A5; -fx-background-radius: 5px;" text="03                Seav Muy                                                                                               e20201819                GIC                Member">
                <VBox.margin>
-                  <Insets bottom="5.0" left="30.0" right="30.0" />
+                  <Insets bottom="20.0" left="30.0" right="30.0" />
                </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
             </TextField>
-            <TextField maxHeight="100.0" mouseTransparent="true" prefHeight="85.0" promptText="                " style="-fx-background-color: #FFC9A5; -fx-background-radius: 5px;" text="04                Rin Singh                                                                                     e20201700                GIC                Member">
+            <TextField maxHeight="100.0" mouseTransparent="true" prefHeight="85.0" promptText="                " style="-fx-background-color: #FFC9A5; -fx-background-radius: 5px;" text="04                Rin Singh                                                                                               e20201700                GIC                Member">
                <VBox.margin>
-                  <Insets bottom="5.0" left="30.0" right="30.0" />
+                  <Insets bottom="20.0" left="30.0" right="30.0" />
                </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
             </TextField>
-            <TextField maxHeight="100.0" mouseTransparent="true" prefHeight="85.0" style="-fx-background-color: #FFC9A5; -fx-background-radius: 5px;" text="05                Lim Techchhiv                                                                              e20200974                GIC                Member">
+            <TextField maxHeight="100.0" mouseTransparent="true" prefHeight="85.0" style="-fx-background-color: #FFC9A5; -fx-background-radius: 5px;" text="05                Lim Techchhiv                                                                                       e20200974                 GIC                Member">
                <VBox.margin>
-                  <Insets bottom="5.0" left="30.0" right="30.0" />
+                  <Insets bottom="20.0" left="30.0" right="30.0" />
                </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
             </TextField>
-            <TextField maxHeight="100.0" mouseTransparent="true" prefHeight="85.0" style="-fx-background-color: #FFC9A5; -fx-background-radius: 5px;" text="06                Sem Jefferson                                                                              e20190976                GIC                Member">
+            <TextField maxHeight="100.0" mouseTransparent="true" prefHeight="85.0" style="-fx-background-color: #FFC9A5; -fx-background-radius: 5px;" text="06                Sem Jefferson                                                                                       e20190976                 GIC                Member">
                <VBox.margin>
                   <Insets left="30.0" right="30.0" />
                </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
             </TextField>
          </children>
          <BorderPane.margin>
@@ -169,4 +187,7 @@
          </BorderPane.margin>
       </HBox>
    </right>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
 </BorderPane>
