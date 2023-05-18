@@ -9,7 +9,16 @@
             "name": "Controller",
             "request": "launch",
             "mainClass": "Controllers.Controller",
-            "projectName": "LibraryApp_90c50d71"
+            "projectName": "LibraryApp_53105431",
+            "vmArgs": "--module-path ${workspaceFolder}/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Controller",
+            "request": "launch",
+            "mainClass": "Controllers.Controller",
+            "projectName": "LibraryApp_90c50d71",
+            "vmArgs": "--module-path ${workspaceFolder}/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
