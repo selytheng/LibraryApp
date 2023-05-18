@@ -15,17 +15,10 @@ public class Controller extends Application {
         Scene scene = new Scene(root,200,300);  
         MenuBar menubar = new MenuBar();  
         Menu FileMenu = new Menu("File");  
-        MenuItem filemenu1=new MenuItem("new");  
-        MenuItem filemenu2=new MenuItem("Save");  
-        MenuItem filemenu3=new MenuItem("Exit");  
-        Menu EditMenu=new Menu("Edit");  
-        MenuItem EditMenu1=new MenuItem("Cut");  
-        MenuItem EditMenu2=new MenuItem("Copy");  
-        MenuItem EditMenu3=new MenuItem("Paste");  
-        EditMenu.getItems().addAll(EditMenu1,EditMenu2,EditMenu3);  
-        root.setTop(menubar);  
-        FileMenu.getItems().addAll(filemenu1,filemenu2,filemenu3);  
-        menubar.getMenus().addAll(FileMenu,EditMenu);  
+        MenuItem filemenu1=new MenuItem("About Us");  
+        MenuItem filemenu2=new MenuItem("Categories");  
+        MenuItem filemenu3=new MenuItem("Log in");  
+        FileMenu.getItems().addAll(filemenu1,filemenu2,filemenu3);
         primaryStage.setScene(scene);  
         primaryStage.show();  
           
