@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: rgba(143, 99, 86, 1);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="43.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-BOOK">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <Button layoutX="354.0" layoutY="55.0" mnemonicParsing="false" style="-fx-background-color: rgba(143, 99, 86, 1);" text="HOME" textFill="#dea782">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="481.0" layoutY="54.0" mnemonicParsing="false" style="-fx-background-color: rgba(143, 99, 86, 1);" text="ABOUT US">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="654.0" layoutY="57.0" mnemonicParsing="false" style="-fx-background-color: rgba(143, 99, 86, 1);" text="CATEGORIE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="838.0" layoutY="55.0" mnemonicParsing="false" style="-fx-background-color: rgba(143, 99, 86, 1);" text="LOG IN">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="255.0" fitWidth="1001.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@im-about_us.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="45.0" layoutY="543.0" prefHeight="227.0" prefWidth="317.0" style="-fx-background-color: rgba(255, 255, 255, 1);" />
+      <Text fill="WHITE" layoutX="386.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our Vision ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="386.0" layoutY="603.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to provide resources andservices in a variety of media to meet the needs of individuals and" />
+      <Text fill="WHITE" layoutX="386.0" layoutY="624.0" strokeType="OUTSIDE" strokeWidth="0.0" text="groups for education, information and personal development includingrecreation and leisure. " />
+      <Text fill="WHITE" layoutX="386.0" layoutY="646.0" strokeType="OUTSIDE" strokeWidth="0.0" text="They have an important role in the developmentand maintenance of a democratic society by" />
+      <Text fill="WHITE" layoutX="386.0" layoutY="665.0" strokeType="OUTSIDE" strokeWidth="0.0" text="giving the individual accessto a wide and varied range of knowledge, ideas and opinions." />
+      <Text fill="WHITE" layoutX="203.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THE MORE YOU READ, THE MORE YOU LEARN">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

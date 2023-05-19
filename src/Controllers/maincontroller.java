@@ -1,6 +1,6 @@
 package Controllers;
 
-import javafx.swing.Action;
+import javax.swing.Action;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,24 +10,26 @@ import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
+import java.io.IOException;
+
 public class maincontroller {
     private Stage stage;
     private Scene scene;
-    private Parent Root;
-    public void switchtoaboutus(ActionEvent event){
-        Parent Root= FXMLLoader.load(getClass().getResource("AboutUS.fxml"));
+    private Parent root;
+    public void switchtoaboutus(ActionEvent event) throws IOException {
+        Parent root= FXMLLoader.load(getClass().getResource("AboutUS.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(Root);
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
     public void switchtocategories(ActionEvent event){
 
     }
-    public void switchtologin(ActionEvent event){
-        Parent Root= FXMLLoader.load(getClass().getResource("user_login.fxml"));
+    public void switchtologin(ActionEvent event) throws IOException {
+        Parent root= FXMLLoader.load(getClass().getResource("user_login.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(Root);
+        scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
