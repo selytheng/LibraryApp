@@ -13,11 +13,11 @@ import javafx.scene.Scene;
 public class maincontroller {
     private Stage stage;
     private Scene scene;
-    private Parent root;
+    private Parent Root;
     public void switchtoaboutus(ActionEvent event){
-        Parent root= FXMLLoader.load(getClass().getResource("AboutUS.fxml"));
+        Parent Root= FXMLLoader.load(getClass().getResource("AboutUS.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
+        scene = new Scene(Root);
         stage.setScene(scene);
         stage.show();
     }
@@ -25,9 +25,9 @@ public class maincontroller {
 
     }
     public void switchtologin(ActionEvent event){
-        Parent root= FXMLLoader.load(getClass().getResource("user_login.fxml"));
+        Parent Root= FXMLLoader.load(getClass().getResource("user_login.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
+        scene = new Scene(Root);
         stage.setScene(scene);
         stage.show();
     }
