@@ -1,6 +1,6 @@
 package Controllers;
 
-import javax.swing.Action;
+import javafx.swing.Action;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
