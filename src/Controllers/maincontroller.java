@@ -15,7 +15,7 @@ public class maincontroller {
     private Scene scene;
     private Parent root;
     public void switchtoaboutus(ActionEvent event){
-        Parent root= FXMLLoader.load(getClass().getResource("About_us.fxml"));
+        Parent root= FXMLLoader.load(getClass().getResource("/Page/AboutUS.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

@@ -1,3 +1,5 @@
+package Controllers;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -11,7 +13,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/Page/HomePage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("HomePage.fxml"));
         stage.setTitle("Welcome to Library App");
         stage.setScene(new Scene(root, 1000, 800));
         stage.show();
