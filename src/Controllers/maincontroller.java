@@ -15,17 +15,21 @@ public class maincontroller {
     private Scene scene;
     private Parent root;
     public void switchtoaboutus(ActionEvent event){
-        Parent root= FXMLLoader.load(getClass().getResource("/Page/AboutUS.fxml"));
+        Parent root= FXMLLoader.load(getClass().getResource("AboutUS.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
     public void switchtocategories(ActionEvent event){
-        
+
     }
     public void switchtologin(ActionEvent event){
-        
+        Parent root= FXMLLoader.load(getClass().getResource("user_login.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
     
 }
