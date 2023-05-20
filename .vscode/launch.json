@@ -9,6 +9,13 @@
             "name": "Main",
             "request": "launch",
             "mainClass": "Controllers.Main",
+            "projectName": "LibraryApp_f6b46c3"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Controllers.Main",
             "projectName": "LibraryApp_53105431"
         },
         {
