@@ -1,21 +1,31 @@
 package Controllers;
 
-import java.net.URL;
-import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 
 public class AboutController {
 
     @FXML
-    private ResourceBundle resources;
+    private Button Homeid;
 
     @FXML
-    private URL location;
+    private Button aboutusid;
 
     @FXML
-    void initialize() {
+    private Button aboutusid1;
+
+    @FXML
+    private Button login;
+
+    @FXML
+    void switchtoaboutus(ActionEvent event) {
+
+    }
+
+    @FXML
+    void switchtologin(ActionEvent event) {
 
     }
 
 }
-
