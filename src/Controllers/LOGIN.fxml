@@ -47,12 +47,12 @@
                   <Font size="16.0" />
                </font>
             </Button>
-            <TextField layoutX="42.0" layoutY="194.0" prefHeight="33.0" prefWidth="266.0" promptText="Email">
+            <TextField fx:id="userid" layoutX="42.0" layoutY="194.0" prefHeight="33.0" prefWidth="266.0" promptText="username">
                <font>
                   <Font size="16.0" />
                </font>
             </TextField>
-            <TextField layoutX="42.0" layoutY="249.0" prefHeight="33.0" prefWidth="266.0" promptText="Password">
+            <TextField fx:id="passwordid" layoutX="42.0" layoutY="249.0" prefHeight="33.0" prefWidth="266.0" promptText="Password">
                <font>
                   <Font size="16.0" />
                </font>
