@@ -1,7 +1,5 @@
 package Controllers;
 
-import javax.swing.Action;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +10,7 @@ import javafx.scene.Scene;
 
 import java.io.IOException;
 
-public class homecontroller {
+public class AboutUSController {
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -45,5 +43,4 @@ public class homecontroller {
         stage.setScene(scene);
         stage.show();
     }
-    
 }

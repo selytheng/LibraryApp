@@ -16,7 +16,7 @@
             <Font size="48.0" />
          </font>
       </Text>
-      <Button fx:id="Homeid" layoutX="344.0" layoutY="45.0" mnemonicParsing="false" style="-fx-background-color: rgba(143, 99, 86, 1);" text="HOME" textFill="#dea782">
+      <Button fx:id="Homeid" layoutX="344.0" layoutY="45.0" mnemonicParsing="false" onAction="#switchtohome" style="-fx-background-color: rgba(143, 99, 86, 1);" text="HOME" textFill="#dea782">
          <font>
             <Font size="30.0" />
          </font>

@@ -6,30 +6,29 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: rgba(143, 99, 86, 1);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: rgba(143, 99, 86, 1);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CategoriesController">
    <children>
       <Text layoutX="43.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-BOOK">
          <font>
             <Font size="48.0" />
          </font>
       </Text>
-      <Button layoutX="354.0" layoutY="55.0" mnemonicParsing="false" style="-fx-background-color: rgba(143, 99, 86, 1);" text="HOME">
+      <Button layoutX="354.0" layoutY="55.0" mnemonicParsing="false" onAction="#switchtohome" style="-fx-background-color: rgba(143, 99, 86, 1);" text="HOME">
          <font>
             <Font size="30.0" />
          </font>
       </Button>
-      <Button layoutX="479.0" layoutY="55.0" mnemonicParsing="false" style="-fx-background-color: rgba(143, 99, 86, 1);" text="ABOUT US">
+      <Button layoutX="479.0" layoutY="55.0" mnemonicParsing="false" onAction="#switchtoaboutus" style="-fx-background-color: rgba(143, 99, 86, 1);" text="ABOUT US">
          <font>
             <Font size="30.0" />
          </font>
       </Button>
-      <Button layoutX="654.0" layoutY="55.0" mnemonicParsing="false" style="-fx-background-color: rgba(143, 99, 86, 1);" text="CATEGORIE" textFill="#dea782">
+      <Button layoutX="654.0" layoutY="55.0" mnemonicParsing="false" onAction="#switchtocategories" style="-fx-background-color: rgba(143, 99, 86, 1);" text="CATEGORIE" textFill="#dea782">
          <font>
             <Font size="30.0" />
          </font>
       </Button>
-      <Button layoutX="838.0" layoutY="55.0" mnemonicParsing="false" style="-fx-background-color: rgba(143, 99, 86, 1);" text="LOG IN">
+      <Button layoutX="838.0" layoutY="55.0" mnemonicParsing="false" onAction="#switchtologin" style="-fx-background-color: rgba(143, 99, 86, 1);" text="LOG IN">
          <font>
             <Font size="30.0" />
          </font>
@@ -191,5 +190,10 @@
             </Pane>
          </children>
       </Pane>
+      <Button layoutX="43.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchtohome" style="-fx-background-color: rgba(143, 99, 86, 1);" text="&lt; BACK" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
    </children>
 </Pane>
