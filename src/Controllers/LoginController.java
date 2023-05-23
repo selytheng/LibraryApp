@@ -13,10 +13,14 @@ import javafx.scene.control.TextField;
 
 import java.awt.*;
 import java.io.IOException;
+import java.util.EventObject;
 
 public class LoginController {
     @FXML
     TextField userid;
+    @FXML
+    TextField passid;
+    private Button button;
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -27,15 +31,15 @@ public class LoginController {
         stage.setScene(scene);
         stage.show();
     }
-    public void login(ActionEvent event) throws IOException {
-        String username = userid.getText();
-        if (username=="admin"){
-            Parent root= FXMLLoader.load(getClass().getResource("AdminHomePage.fxml"));
-            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-            scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-        }
 
+    public void login(ActionEvent event) throws IOException {
+        checkLogin();
     }
+    public void checkLogin() throws IOException {
+        Main m = new Main();
+        if(userid.getText().toString().equals("admin") && passid.getText().toString().equals("123")){
+            m.changescene("AdminHomePage.fxml");
+        }
+    }
+
 }

@@ -6,6 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
@@ -22,6 +24,12 @@ public class Main extends Application {
         } catch(Exception e){
             e.printStackTrace();
         }
+    }
+    private static Stage stg;
+    public void changescene(String fxml) throws IOException {
+        Parent pane = FXMLLoader.load(getClass().getResource(fxml));
+        stg.getScene().setRoot(pane);
+
     }
 }
 
