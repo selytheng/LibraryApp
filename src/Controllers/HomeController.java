@@ -12,7 +12,7 @@ import javafx.scene.Scene;
 
 import java.io.IOException;
 
-public class homecontroller {
+public class HomeController {
     private Stage stage;
     private Scene scene;
     private Parent root;
