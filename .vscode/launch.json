@@ -9,42 +9,48 @@
             "name": "Main",
             "request": "launch",
             "mainClass": "Controllers.Main",
-            "projectName": "LibraryApp_f6b46c3"
+            "projectName": "LibraryApp_f6b46c3",
+            "vmArgs": "--module-path ${workspaceFolder}/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "Controllers.Main",
-            "projectName": "LibraryApp_53105431"
+            "projectName": "LibraryApp_53105431",
+            "vmArgs": "--module-path ${workspaceFolder}/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
             "name": "ConnectDB",
             "request": "launch",
             "mainClass": "samples.db.ConnectDB",
-            "projectName": "LibraryApp_90c50d71"
+            "projectName": "LibraryApp_90c50d71",
+            "vmArgs": "--module-path ${workspaceFolder}/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "Controllers.App",
-            "projectName": "LibraryApp_53105431"
+            "projectName": "LibraryApp_53105431",
+            "vmArgs": "--module-path ${workspaceFolder}/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "Controllers.App",
-            "projectName": "LibraryApp_90c50d71"
+            "projectName": "LibraryApp_90c50d71",
+            "vmArgs": "--module-path ${workspaceFolder}/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
-            "projectName": "LibraryApp_90c50d71"
+            "projectName": "LibraryApp_90c50d71",
+            "vmArgs": "--module-path ${workspaceFolder}/lib/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
