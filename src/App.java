@@ -8,10 +8,11 @@ public class App extends Application {
     public static void main(String[] args) throws Exception {
         launch(args);
     }
-
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/Controllers/AboutUS.fxml"));
+
+     //right here!!!
+     
         stage.setTitle("Welcome to Library App");
         stage.setScene(new Scene(root));
         stage.show();
