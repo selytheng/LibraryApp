@@ -19,5 +19,6 @@ public class App extends Application {
     }
     public void Controllers(){
         Stage stage;
+        Stage.getWindows();
     }
 }
