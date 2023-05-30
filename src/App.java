@@ -21,4 +21,3 @@ public class App extends Application {
         Stage stage;
     }
 }
-//AE
