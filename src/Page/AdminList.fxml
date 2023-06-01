@@ -17,7 +17,7 @@
    <top>
       <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;" wrappingWidth="24.626953125">
+            <Text fill="#ffc9a5" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;" wrappingWidth="24.626953125">
                <font>
                   <Font size="36.0" />
                </font>
