@@ -31,7 +31,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="aboutusid1" layoutX="596.0" layoutY="53.0" mnemonicParsing="false" onAction="#switchtocategories" style="-fx-background-color: rgba(143, 99, 86, 1);" text="LIST BOOKS">
+      <Button fx:id="aboutusid1" layoutX="596.0" layoutY="53.0" mnemonicParsing="false" onAction="#switchtolistbook" style="-fx-background-color: rgba(143, 99, 86, 1);" text="LIST BOOKS">
          <font>
             <Font size="30.0" />
          </font>

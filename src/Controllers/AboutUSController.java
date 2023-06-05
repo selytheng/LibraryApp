@@ -29,8 +29,8 @@ public class AboutUSController {
         stage.setScene(scene);
         stage.show();
     }
-    public void switchtocategories(ActionEvent event)throws IOException {
-        Parent root= FXMLLoader.load(getClass().getResource("Categories.fxml"));
+    public void switchtolistbook(ActionEvent event)throws IOException {
+        Parent root= FXMLLoader.load(getClass().getResource("ListBook.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
