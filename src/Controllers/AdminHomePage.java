@@ -38,7 +38,7 @@ public class AdminHomePage {
         stage.show();
     }
     public void switchtoadmin(ActionEvent event) throws IOException {
-        Parent root= FXMLLoader.load(getClass().getResource("AdminList.fxml"));
+        Parent root= FXMLLoader.load(getClass().getResource("ADMIN_CONTROLLER.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
