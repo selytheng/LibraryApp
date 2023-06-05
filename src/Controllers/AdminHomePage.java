@@ -24,7 +24,7 @@ public class AdminHomePage {
     }
 
     public void switchtoaboutus(ActionEvent event) throws IOException {
-        Parent root= FXMLLoader.load(getClass().getResource("AboutUS.fxml"));
+        Parent root= FXMLLoader.load(getClass().getResource("AdminAboutUS.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

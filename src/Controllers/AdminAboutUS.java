@@ -1,48 +1,49 @@
 package Controllers;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 public class AdminAboutUS {
-
-    @FXML
-    private ResourceBundle resources;
-
-    @FXML
-    private URL location;
-
-    @FXML
-    private Button Homeid;
-
-    @FXML
-    private Button aboutusid;
-
-    @FXML
-    private Button aboutusid1;
-
-    @FXML
-    private Button login;
-
-    @FXML
-    void switchtoaboutus(ActionEvent event) {
-        
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
+    public void switchtohome(ActionEvent event) throws IOException {
+        Parent root= FXMLLoader.load(getClass().getResource("AdminHomePage.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
-    @FXML
-    void switchtologin(ActionEvent event) {
-
+    public void switchtoaboutus(ActionEvent event) throws IOException {
+        Parent root= FXMLLoader.load(getClass().getResource("Admin_AboutUS.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
-
-    @FXML
-    void initialize() {
-        assert Homeid != null : "fx:id=\"Homeid\" was not injected: check your FXML file 'AdminAboutUS.fxml'.";
-        assert aboutusid != null : "fx:id=\"aboutusid\" was not injected: check your FXML file 'AdminAboutUS.fxml'.";
-        assert aboutusid1 != null : "fx:id=\"aboutusid1\" was not injected: check your FXML file 'AdminAboutUS.fxml'.";
-        assert login != null : "fx:id=\"login\" was not injected: check your FXML file 'AdminAboutUS.fxml'.";
-
+    public void switchtolistbook(ActionEvent event)throws IOException {
+        Parent root= FXMLLoader.load(getClass().getResource("ListBook.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void switchtoadmin(ActionEvent event) throws IOException {
+        Parent root= FXMLLoader.load(getClass().getResource("ADMIN_CONTROLLER.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
 }

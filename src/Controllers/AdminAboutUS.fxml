@@ -34,7 +34,7 @@
             <Font size="30.0" />
          </font>
       </Text>
-      <Button fx:id="Homeid" layoutX="335.0" layoutY="65.0" mnemonicParsing="false" style="-fx-background-color: rgba(143, 99, 86, 1);" text="HOME">
+      <Button fx:id="Homeid" layoutX="335.0" layoutY="65.0" mnemonicParsing="false" onAction="#switchtohome" style="-fx-background-color: rgba(143, 99, 86, 1);" text="HOME">
          <font>
             <Font size="30.0" />
          </font>
@@ -44,12 +44,12 @@
             <Font size="30.0" />
          </font>
       </Button>
-      <Button fx:id="login" layoutX="781.0" layoutY="70.0" mnemonicParsing="false" onAction="#switchtologin" prefHeight="51.0" prefWidth="219.0" style="-fx-background-color: rgba(143, 99, 86, 1);" text="Admin' s Controller">
+      <Button fx:id="login" layoutX="781.0" layoutY="70.0" mnemonicParsing="false" onAction="#switchtoadmin" prefHeight="51.0" prefWidth="219.0" style="-fx-background-color: rgba(143, 99, 86, 1);" text="Admin' s Controller">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="aboutusid1" layoutX="606.0" layoutY="63.0" mnemonicParsing="false" onAction="#switchtoaboutus" style="-fx-background-color: rgba(143, 99, 86, 1);" text="LIST BOOKS">
+      <Button fx:id="aboutusid1" layoutX="606.0" layoutY="63.0" mnemonicParsing="false" onAction="#switchtolistbook" style="-fx-background-color: rgba(143, 99, 86, 1);" text="LIST BOOKS">
          <font>
             <Font size="30.0" />
          </font>
