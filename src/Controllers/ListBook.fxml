@@ -33,6 +33,7 @@
 -->
 
 <?import com.gluonhq.charm.glisten.control.Icon?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
@@ -73,11 +74,6 @@
             <Text fill="#0000007b" layoutX="2011.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quick search..." wrappingWidth="488.34375762939453">
                <font>
                   <Font size="43.0" />
-               </font>
-            </Text>
-            <Text fill="#cd9878" layoutX="148.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;" wrappingWidth="122.0">
-               <font>
-                  <Font size="96.0" />
                </font>
             </Text>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="610.0" layoutX="530.0" layoutY="433.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
@@ -242,6 +238,11 @@
                </font>
             </Text>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="426.0" layoutX="1978.0" layoutY="1073.0" stroke="#d9d9d9" strokeType="INSIDE" width="430.0" />
+            <Button layoutX="76.0" layoutY="94.0" mnemonicParsing="false" text="&lt;" textFill="#8f6356">
+               <font>
+                  <Font size="68.0" />
+               </font>
+            </Button>
       </children>
     </AnchorPane>
       <Icon content="HELP_OUTLINE" />

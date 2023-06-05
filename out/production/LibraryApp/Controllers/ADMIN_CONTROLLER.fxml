@@ -10,13 +10,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #8F6356;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #8F6356;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Adminpagecontroller">
    <children>
       <Line endX="899.0" layoutX="100.0" layoutY="124.0" startX="-100.0" stroke="#dea782" />
       <Pane layoutX="36.0" layoutY="657.0" prefHeight="108.0" prefWidth="279.0" />
       <Pane layoutX="46.0" layoutY="644.0" prefHeight="130.0" prefWidth="343.0" style="-fx-background-color: #ffc9a5; -fx-border-color: #ffffff;">
          <children>
-            <Button layoutX="83.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: #ffc9a5;" text="Login" textFill="#9f715f">
+            <Button layoutX="83.0" layoutY="19.0" mnemonicParsing="false" onAction="#switchtologout" style="-fx-background-color: #ffc9a5;" text="Logout" textFill="#9f715f">
                <font>
                   <Font size="32.0" />
                </font>
@@ -34,7 +34,7 @@
       </Pane>
       <Pane layoutX="46.0" layoutY="384.0" prefHeight="130.0" prefWidth="343.0" style="-fx-background-color: #ffc9a5; -fx-border-color: #ffffff;">
          <children>
-            <Button layoutX="56.0" layoutY="32.0" mnemonicParsing="false" style="-fx-background-color: #ffc9a5;" text="Admin' s List" textFill="#9f715f">
+            <Button layoutX="56.0" layoutY="32.0" mnemonicParsing="false" onAction="#switchtoadminlist" style="-fx-background-color: #ffc9a5;" text="Admin' s List" textFill="#9f715f">
                <font>
                   <Font size="32.0" />
                </font>
@@ -42,7 +42,7 @@
          </children></Pane>
       <Pane layoutX="46.0" layoutY="254.0" prefHeight="130.0" prefWidth="343.0" style="-fx-background-color: #ffc9a5; -fx-border-color: #ffffff;">
          <children>
-            <Button layoutX="91.0" layoutY="38.0" mnemonicParsing="false" style="-fx-background-color: #ffc9a5;" text="Home" textFill="#9f715f">
+            <Button layoutX="91.0" layoutY="38.0" mnemonicParsing="false" onAction="#switchtohome" style="-fx-background-color: #ffc9a5;" text="Home" textFill="#9f715f">
                <font>
                   <Font size="32.0" />
                </font>
@@ -68,7 +68,7 @@
       </Pane>
       <Pane layoutX="431.0" layoutY="252.0" prefHeight="245.0" prefWidth="260.0" style="-fx-background-color: #ffc9a5;">
          <children>
-            <Button layoutX="3.0" layoutY="96.0" mnemonicParsing="false" style="-fx-background-color: #ffc9a5;" text="Borrow Books" textFill="#9f715f">
+            <Button layoutX="3.0" layoutY="96.0" mnemonicParsing="false" onAction="#switchtoborrowlist" style="-fx-background-color: #ffc9a5;" text="Borrow Books" textFill="#9f715f">
                <font>
                   <Font size="34.0" />
                </font>
