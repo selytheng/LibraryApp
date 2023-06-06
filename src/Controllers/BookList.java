@@ -1,15 +1,13 @@
 package Controllers;
 
-import java.sql.Date;
-
-public class bookdata {
+public class BookList {
     String Name;
     String Des;
     String Author;
     String Page;
     String Publish;
 
-    public bookdata(String Name, String Des, String Author, String Publish, String Page){
+    public BookList(String Name, String Des, String Author, String Publish, String Page){
         this.Name=Name;
         this.Des=Des;
         this.Author=Author;
