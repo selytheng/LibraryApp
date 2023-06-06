@@ -1,8 +1,6 @@
 package Controllers;
 
-import javax.swing.Action;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.stage.Stage;
@@ -38,7 +36,7 @@ public class AdminHomePage {
         stage.show();
     }
     public void switchtoadmin(ActionEvent event) throws IOException {
-        Parent root= FXMLLoader.load(getClass().getResource("ADMIN_CONTROLLER.fxml"));
+        Parent root= FXMLLoader.load(getClass().getResource("Adminpage.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

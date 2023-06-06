@@ -1,252 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--
-  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
-  All rights reserved. Use is subject to license terms.
-
-  This file is available and licensed under the following license:
-
-  Redistribution and use in source and binary forms, with or without
-  modification, are permitted provided that the following conditions
-  are met:
-
-  - Redistributions of source code must retain the above copyright
-    notice, this list of conditions and the following disclaimer.
-  - Redistributions in binary form must reproduce the above copyright
-    notice, this list of conditions and the following disclaimer in
-    the documentation and/or other materials provided with the distribution.
-  - Neither the name of Oracle Corporation nor the names of its
-    contributors may be used to endorse or promote products derived
-    from this software without specific prior written permission.
-
-  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
-<?import com.gluonhq.charm.glisten.control.Icon?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Line?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<VBox prefHeight="1700.0" prefWidth="2800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ListBookController">
-  <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
-      <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8f6356" height="1697.0" stroke="#8f6356" strokeType="INSIDE" width="2803.0" />
-            <Text fill="WHITE" layoutX="241.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fiction Books" wrappingWidth="664.103515625">
-               <font>
-                  <Font size="96.0" />
-               </font>
-            </Text>
-            <Line endX="2699.0" layoutX="75.0" layoutY="370.0" startX="-100.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="610.0" layoutX="34.0" layoutY="433.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cf8f7edc" height="187.0" layoutX="34.0" layoutY="856.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Text fill="WHITE" layoutX="47.0" layoutY="910.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title">
-               <font>
-                  <Font size="44.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="47.0" layoutY="1023.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="334.0" layoutY="1021.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Released">
-               <font>
-                  <Font size="26.0" />
-               </font>
-            </Text>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="426.0" layoutX="34.0" layoutY="433.0" stroke="#d9d9d9" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="101.0" layoutX="1978.0" layoutY="184.0" stroke="BLACK" strokeType="INSIDE" width="583.0" />
-            <Text fill="#0000007b" layoutX="2011.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quick search..." wrappingWidth="488.34375762939453">
-               <font>
-                  <Font size="43.0" />
-               </font>
-            </Text>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="610.0" layoutX="530.0" layoutY="433.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cf8f7edc" height="187.0" layoutX="530.0" layoutY="856.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Text fill="WHITE" layoutX="543.0" layoutY="910.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title">
-               <font>
-                  <Font size="44.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="543.0" layoutY="1023.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="830.0" layoutY="1021.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Released">
-               <font>
-                  <Font size="26.0" />
-               </font>
-            </Text>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="426.0" layoutX="530.0" layoutY="433.0" stroke="#d9d9d9" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="610.0" layoutX="34.0" layoutY="1073.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cf8f7edc" height="187.0" layoutX="34.0" layoutY="1496.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Text fill="WHITE" layoutX="47.0" layoutY="1550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title">
-               <font>
-                  <Font size="44.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="47.0" layoutY="1663.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="334.0" layoutY="1661.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Released">
-               <font>
-                  <Font size="26.0" />
-               </font>
-            </Text>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="426.0" layoutX="34.0" layoutY="1073.0" stroke="#d9d9d9" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="610.0" layoutX="530.0" layoutY="1073.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cf8f7edc" height="187.0" layoutX="530.0" layoutY="1496.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Text fill="WHITE" layoutX="543.0" layoutY="1550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title">
-               <font>
-                  <Font size="44.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="543.0" layoutY="1663.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="830.0" layoutY="1661.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Released">
-               <font>
-                  <Font size="26.0" />
-               </font>
-            </Text>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="426.0" layoutX="530.0" layoutY="1073.0" stroke="#d9d9d9" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="610.0" layoutX="1006.0" layoutY="433.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cf8f7edc" height="187.0" layoutX="1006.0" layoutY="856.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Text fill="WHITE" layoutX="1019.0" layoutY="910.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title">
-               <font>
-                  <Font size="44.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="1019.0" layoutY="1023.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="1306.0" layoutY="1021.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Released">
-               <font>
-                  <Font size="26.0" />
-               </font>
-            </Text>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="426.0" layoutX="1006.0" layoutY="433.0" stroke="#d9d9d9" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="610.0" layoutX="1492.0" layoutY="433.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cf8f7edc" height="187.0" layoutX="1492.0" layoutY="856.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Text fill="WHITE" layoutX="1505.0" layoutY="910.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title">
-               <font>
-                  <Font size="44.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="1505.0" layoutY="1023.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="1792.0" layoutY="1021.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Released">
-               <font>
-                  <Font size="26.0" />
-               </font>
-            </Text>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="426.0" layoutX="1492.0" layoutY="433.0" stroke="#d9d9d9" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="610.0" layoutX="1006.0" layoutY="1073.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cf8f7edc" height="187.0" layoutX="1006.0" layoutY="1496.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Text fill="WHITE" layoutX="1019.0" layoutY="1550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title">
-               <font>
-                  <Font size="44.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="1019.0" layoutY="1663.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="1306.0" layoutY="1661.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Released">
-               <font>
-                  <Font size="26.0" />
-               </font>
-            </Text>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="426.0" layoutX="1006.0" layoutY="1073.0" stroke="#d9d9d9" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="610.0" layoutX="1492.0" layoutY="1073.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cf8f7edc" height="187.0" layoutX="1492.0" layoutY="1496.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Text fill="WHITE" layoutX="1505.0" layoutY="1550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title">
-               <font>
-                  <Font size="44.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="1505.0" layoutY="1663.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="1792.0" layoutY="1661.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Released">
-               <font>
-                  <Font size="26.0" />
-               </font>
-            </Text>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="426.0" layoutX="1492.0" layoutY="1073.0" stroke="#d9d9d9" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="610.0" layoutX="1978.0" layoutY="433.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cf8f7edc" height="187.0" layoutX="1978.0" layoutY="856.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Text fill="WHITE" layoutX="1991.0" layoutY="910.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title">
-               <font>
-                  <Font size="44.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="1991.0" layoutY="1023.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="2278.0" layoutY="1021.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Released">
-               <font>
-                  <Font size="26.0" />
-               </font>
-            </Text>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="426.0" layoutX="1978.0" layoutY="433.0" stroke="#d9d9d9" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="610.0" layoutX="1978.0" layoutY="1073.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cf8f7edc" height="187.0" layoutX="1978.0" layoutY="1496.0" stroke="#dea782" strokeType="INSIDE" width="430.0" />
-            <Text fill="WHITE" layoutX="1991.0" layoutY="1550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title">
-               <font>
-                  <Font size="44.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="1991.0" layoutY="1663.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="2278.0" layoutY="1661.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Released">
-               <font>
-                  <Font size="26.0" />
-               </font>
-            </Text>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="426.0" layoutX="1978.0" layoutY="1073.0" stroke="#d9d9d9" strokeType="INSIDE" width="430.0" />
-            <Button layoutX="96.0" layoutY="162.0" mnemonicParsing="false" onAction="#switchtohome" text="&lt;" textFill="#8f6356">
-               <font>
-                  <Font name="Arial" size="48.0" />
-               </font>
-            </Button>
-      </children>
-    </AnchorPane>
-      <Icon content="HELP_OUTLINE" />
-      <Icon content="HELP_OUTLINE" />
-      <Icon content="HELP_OUTLINE" />
-  </children>
-</VBox>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ListBookController">
+   <children>
+      <TableView fx:id="Bookdata" layoutX="84.0" layoutY="100.0" prefHeight="200.0" prefWidth="375.0">
+        <columns>
+          <TableColumn fx:id="namecol" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="descol" prefWidth="75.0" text="Discription" />
+            <TableColumn fx:id="pubcol" prefWidth="75.0" text="Publish" />
+            <TableColumn fx:id="pagecol" prefWidth="75.0" text="Page" />
+            <TableColumn fx:id="authorcol" prefWidth="75.0" text="Author" />
+        </columns>
+      </TableView>
+      <Button layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchtohome" text="Button">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
