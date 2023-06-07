@@ -20,7 +20,7 @@ import java.util.logging.Logger;
 public class DbConnect {
     
     private static String HOST = "127.0.0.1";
-        private static int PORT = 3306;
+        private static int PORT = 3308;
         private static String DB_NAME = "BookList";
         private static String USERNAME = "root";
         private static String PASSWORD = "";
