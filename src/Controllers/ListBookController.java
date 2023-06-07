@@ -7,44 +7,33 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import java.io.IOException;
-import java.net.URL;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.time.LocalDate;
-import java.util.Observable;
+
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javafx.collections.FXCollections;
+
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-import javafx.util.Callback;
 
+import javafx.scene.control.TextField;
 
 
 
 public class ListBookController {
-    private Connection con = null;
     private PreparedStatement pst = null;
     private ResultSet rs = null;
+    private ObservableList<BookList> data;
     @FXML
     private TableView<BookList> Bookdata;
     @FXML
@@ -57,18 +46,85 @@ public class ListBookController {
     private TableColumn<BookList, String> pagecol;
     @FXML
     private TableColumn<BookList, String> authorcol;
+    @FXML
+    private TextField txtName;
+    @FXML
+    private TextField txtDes;
+    @FXML
+    private TextField txtAuthor;
+    @FXML
+    private TextField txtPage;
+    @FXML
+    private TextField txtPub;
+
+    private Connection con =null ;
+    String query = null;
+
 
     public void initiatize(URL url, ResourceBundle rb){
+        con = DbConnect.getConnect();
+        setCellTable();
+        data = FXCollections.observableArrayList();
+        LoadDB();
+    }
 
+    public void adddata(ActionEvent event){
+        String sql = "INSERT INTO `booklist`(`Name`, `Description`, `Author`, `Page`, `Public`) VALUES ('?','?','?','?','?')";
+        String Name = txtName.getText();
+        String Description = txtDes.getText();
+        String Author = txtAuthor.getText();
+        String Page = txtPage.getText();
+        String Publish = txtPub.getText();
+        try
+        {
+            pst = con.prepareStatement(sql);
+            pst.setString(1, Name);
+            pst.setString(2, Description);
+            pst.setString(3, Author);
+            pst.setString(4, Page);
+            pst.setString(5, Publish);
+
+            int i = pst.executeUpdate();
+            if(i==1) System.out.println("Data insert succesfully");
+        }
+        catch(SQLException ex) {
+            Logger.getLogger(ListBookController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     private void setCellTable(){
-        namecol.setCellFactory(new PropertyValueFactory<>("Name"));
+        con = DbConnect.getConnect();
 
+        namecol.setCellValueFactory(new PropertyValueFactory<>("Name"));
+        descol.setCellValueFactory(new PropertyValueFactory<>("Description"));
+        authorcol.setCellValueFactory(new PropertyValueFactory<>("Author"));
+        pagecol.setCellValueFactory(new PropertyValueFactory<>("Page"));
+        pubcol.setCellValueFactory(new PropertyValueFactory<>("Publish"));
     }
+
+    private void LoadDB(){
+        try{
+            pst = con.prepareStatement("Select * from BookList");
+            rs = pst.executeQuery();
+            while (rs.next()){
+                data.add(new BookList(rs.getString(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getString(4),
+                        rs.getString(5)));
+            }
+        } catch (SQLException ex){
+            Logger.getLogger(ListBookController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        Bookdata.setItems(data);
+    }
+
+
+
     private Stage stage;
     private Scene scene;
     private Parent root;
+    @FXML
     public void switchtohome(ActionEvent event) throws IOException {
         Parent root= FXMLLoader.load(getClass().getResource("HomePage.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
