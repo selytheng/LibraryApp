@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
@@ -34,166 +36,130 @@
          </font>
       </Button>
       <Line endX="837.0000610351562" endY="1.52587890625E-5" layoutX="163.0" layoutY="146.0" startX="-162.99998474121094" startY="1.52587890625E-5" />
-      <Pane layoutX="44.0" layoutY="174.0" prefHeight="260.0" prefWidth="150.0" style="-fx-background-color: rgba(217, 217, 217, 1);">
-         <children>
-            <Pane layoutY="174.0" prefHeight="87.0" prefWidth="150.0" style="-fx-background-color: rgba(207, 143, 125, 0.86);">
-               <children>
-                  <Text layoutX="31.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FICTION">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-         </children>
-      </Pane>
-      <Pane layoutX="200.0" layoutY="174.0" prefHeight="260.0" prefWidth="150.0" style="-fx-background-color: rgba(217, 217, 217, 1);">
-         <children>
-            <Pane layoutY="174.0" prefHeight="87.0" prefWidth="150.0" style="-fx-background-color: rgba(207, 143, 125, 0.86);">
-               <children>
-                  <Text layoutX="45.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCI-FI">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-         </children>
-      </Pane>
-      <Pane layoutX="356.0" layoutY="174.0" prefHeight="260.0" prefWidth="150.0" style="-fx-background-color: rgba(217, 217, 217, 1);">
-         <children>
-            <Pane layoutY="174.0" prefHeight="87.0" prefWidth="150.0" style="-fx-background-color: rgba(207, 143, 125, 0.86);">
-               <children>
-                  <Text layoutX="23.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MYSTERY">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-         </children>
-      </Pane>
-      <Pane layoutX="512.0" layoutY="174.0" prefHeight="260.0" prefWidth="150.0" style="-fx-background-color: rgba(217, 217, 217, 1);">
-         <children>
-            <Pane layoutY="174.0" prefHeight="87.0" prefWidth="150.0" style="-fx-background-color: rgba(207, 143, 125, 0.86);">
-               <children>
-                  <Text layoutX="33.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="POETRY">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-         </children>
-      </Pane>
-      <Pane layoutX="668.0" layoutY="174.0" prefHeight="260.0" prefWidth="150.0" style="-fx-background-color: rgba(217, 217, 217, 1);">
-         <children>
-            <Pane layoutY="174.0" prefHeight="87.0" prefWidth="150.0" style="-fx-background-color: rgba(207, 143, 125, 0.86);">
-               <children>
-                  <Text layoutX="31.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HISTORY">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-         </children>
-      </Pane>
-      <Pane layoutX="824.0" layoutY="174.0" prefHeight="260.0" prefWidth="150.0" style="-fx-background-color: rgba(217, 217, 217, 1);">
-         <children>
-            <Pane layoutY="174.0" prefHeight="87.0" prefWidth="150.0" style="-fx-background-color: rgba(207, 143, 125, 0.86);">
-               <children>
-                  <Text layoutX="31.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLASSIC">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-         </children>
-      </Pane>
-      <Pane layoutX="44.0" layoutY="463.0" prefHeight="260.0" prefWidth="150.0" style="-fx-background-color: rgba(217, 217, 217, 1);">
-         <children>
-            <Pane layoutY="174.0" prefHeight="87.0" prefWidth="150.0" style="-fx-background-color: rgba(207, 143, 125, 0.86);">
-               <children>
-                  <Text layoutX="8.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADVANTURE">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-         </children>
-      </Pane>
-      <Pane layoutX="200.0" layoutY="463.0" prefHeight="260.0" prefWidth="150.0" style="-fx-background-color: rgba(217, 217, 217, 1);">
-         <children>
-            <Pane layoutY="174.0" prefHeight="87.0" prefWidth="150.0" style="-fx-background-color: rgba(207, 143, 125, 0.86);">
-               <children>
-                  <Text layoutX="47.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRIME">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-         </children>
-      </Pane>
-      <Pane layoutX="356.0" layoutY="463.0" prefHeight="260.0" prefWidth="150.0" style="-fx-background-color: rgba(217, 217, 217, 1);">
-         <children>
-            <Pane layoutY="174.0" prefHeight="87.0" prefWidth="150.0" style="-fx-background-color: rgba(207, 143, 125, 0.86);">
-               <children>
-                  <Text layoutX="29.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THRILLER">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-         </children>
-      </Pane>
-      <Pane layoutX="512.0" layoutY="463.0" prefHeight="260.0" prefWidth="150.0" style="-fx-background-color: rgba(217, 217, 217, 1);">
-         <children>
-            <Pane layoutY="174.0" prefHeight="87.0" prefWidth="150.0" style="-fx-background-color: rgba(207, 143, 125, 0.86);">
-               <children>
-                  <Text layoutX="21.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROMANCE">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-         </children>
-      </Pane>
-      <Pane layoutX="668.0" layoutY="463.0" prefHeight="260.0" prefWidth="150.0" style="-fx-background-color: rgba(217, 217, 217, 1);">
-         <children>
-            <Pane layoutY="174.0" prefHeight="87.0" prefWidth="150.0" style="-fx-background-color: rgba(207, 143, 125, 0.86);">
-               <children>
-                  <Text layoutX="24.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HORROR">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-         </children>
-      </Pane>
-      <Pane layoutX="824.0" layoutY="463.0" prefHeight="260.0" prefWidth="150.0" style="-fx-background-color: rgba(217, 217, 217, 1);">
-         <children>
-            <Pane layoutY="174.0" prefHeight="87.0" prefWidth="150.0" style="-fx-background-color: rgba(207, 143, 125, 0.86);">
-               <children>
-                  <Text layoutX="35.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THESIS">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-         </children>
-      </Pane>
-      <Button layoutX="43.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchtohome" style="-fx-background-color: rgba(143, 99, 86, 1);" text="&lt; BACK" textFill="WHITE">
+      <Button layoutX="2.0" mnemonicParsing="false" onAction="#switchtohome" style="-fx-background-color: rgba(143, 99, 86, 1);" text="&lt; BACK" textFill="WHITE">
          <font>
             <Font size="27.0" />
          </font>
       </Button>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="35.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/angellinaaludo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="215.0" fitWidth="146.0" layoutX="196.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/book1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="360.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/jillstukenberg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="239.0" fitWidth="136.0" layoutX="523.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/kathrynbywaters.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="684.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/mollygreen.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="843.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/nickjones.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="68.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FICTION">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="37.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/aileenerin.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="201.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/almakasu.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="209.0" fitWidth="134.0" layoutX="362.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/azaleaellis.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="525.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/RobertClarke.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="686.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Alien.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="208.0" fitWidth="136.0" layoutX="845.0" layoutY="492.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Mclaughlin.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="243.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCI-FI">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="388.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MYSTERY">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="557.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="POETRY">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="716.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HISTORY">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="870.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLASSIC">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="52.0" layoutY="748.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADVANTURE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="241.0" layoutY="748.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CRIME">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="388.0" layoutY="748.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THRILLER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="545.0" layoutY="748.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROMANCE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="714.0" layoutY="748.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HORROR">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="881.0" layoutY="748.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THESIS">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
    </children>
 </Pane>
