@@ -38,7 +38,7 @@
       </Button>
       <ImageView fitHeight="574.0" fitWidth="999.0" layoutX="1.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@im-home_page.jpg" />
+            <Image url="/image/im-home_page.jpg" />
          </image>
       </ImageView>
       <Button layoutX="899.0" layoutY="23.0" mnemonicParsing="false" style="-fx-background-color: rgba(255, 249, 93, 1);" text="LOG OUT">
