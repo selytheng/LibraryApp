@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #8F6356;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="1.0" mnemonicParsing="false" style="-fx-background-color: #8F6356;" text="&lt;" textFill="#ffc9a5">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="120.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fiction Books">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <Line endX="899.0" layoutX="101.0" layoutY="139.0" startX="-100.0" stroke="#dea782" strokeWidth="2.0" />
+      <TextField layoutX="688.0" layoutY="49.0" prefHeight="48.0" prefWidth="284.0" promptText="Quick Search...">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Text fill="WHITE" layoutX="28.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="26.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Molly Green">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="127.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2002">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="25.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ramdom%20Photo/book%20cover/2.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="192.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="190.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Molly Green">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="291.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2002">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="189.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ramdom%20Photo/book%20cover/2.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="357.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="355.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Molly Green">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="456.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2002">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="350.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ramdom%20Photo/book%20cover/2.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="516.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="514.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Molly Green">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="615.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2002">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="513.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ramdom%20Photo/book%20cover/2.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="677.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="675.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Molly Green">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="776.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2002">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="674.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ramdom%20Photo/book%20cover/2.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="836.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="834.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Molly Green">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="927.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2002">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="833.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ramdom%20Photo/book%20cover/2.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="30.0" layoutY="727.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="28.0" layoutY="761.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Molly Green">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="129.0" layoutY="777.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2002">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="27.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ramdom%20Photo/book%20cover/2.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="194.0" layoutY="728.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="192.0" layoutY="762.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Molly Green">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="293.0" layoutY="778.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2002">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="191.0" layoutY="484.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ramdom%20Photo/book%20cover/2.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="359.0" layoutY="728.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="357.0" layoutY="762.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Molly Green">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="458.0" layoutY="778.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2002">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="352.0" layoutY="484.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ramdom%20Photo/book%20cover/2.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="518.0" layoutY="729.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="516.0" layoutY="763.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Molly Green">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="617.0" layoutY="779.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2002">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="515.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ramdom%20Photo/book%20cover/2.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="679.0" layoutY="728.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="677.0" layoutY="762.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Molly Green">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="778.0" layoutY="778.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2002">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="676.0" layoutY="484.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ramdom%20Photo/book%20cover/2.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="838.0" layoutY="729.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="836.0" layoutY="763.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Molly Green">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="929.0" layoutY="779.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2002">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="835.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ramdom%20Photo/book%20cover/2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
