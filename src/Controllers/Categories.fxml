@@ -41,34 +41,34 @@
             <Font size="27.0" />
          </font>
       </Button>
-      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="35.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="261.0" fitWidth="155.0" layoutX="31.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/angellinaaludo.jpg" />
+            <Image url="@../image/fiction.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="215.0" fitWidth="146.0" layoutX="196.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="226.0" fitWidth="135.0" layoutX="206.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/book1.jpg" />
+            <Image url="@../image/sci-fi.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="360.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="362.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/jillstukenberg.jpg" />
+            <Image url="@../image/mystery.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="239.0" fitWidth="136.0" layoutX="523.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="231.0" fitWidth="151.0" layoutX="510.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/kathrynbywaters.jpg" />
+            <Image url="@../image/poetry.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="684.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="234.0" fitWidth="157.0" layoutX="680.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/mollygreen.jpg" />
+            <Image url="@../image/history.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="843.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="857.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/nickjones.jpg" />
+            <Image url="@../image/classic.jpg" />
          </image>
       </ImageView>
       <Text fill="WHITE" layoutX="68.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FICTION">
@@ -76,34 +76,34 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Text>
-      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="37.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="207.0" fitWidth="145.0" layoutX="37.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/aileenerin.jpg" />
+            <Image url="@../image/advanture.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="201.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="221.0" fitWidth="145.0" layoutX="202.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/almakasu.jpg" />
+            <Image url="@../image/crime.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="209.0" fitWidth="134.0" layoutX="362.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="207.0" fitWidth="145.0" layoutX="365.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/azaleaellis.jpg" />
+            <Image url="@../image/thriller.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="525.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="207.0" fitWidth="128.0" layoutX="529.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/RobertClarke.jpg" />
+            <Image url="@../image/romance.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="686.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="225.0" fitWidth="136.0" layoutX="683.0" layoutY="496.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/Alien.jpg" />
+            <Image url="@../image/horror.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="208.0" fitWidth="136.0" layoutX="845.0" layoutY="492.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="208.0" fitWidth="145.0" layoutX="836.0" layoutY="497.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/Mclaughlin.jpg" />
+            <Image url="@../image/thesis.jpg" />
          </image>
       </ImageView>
       <Text fill="WHITE" layoutX="243.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCI-FI">
