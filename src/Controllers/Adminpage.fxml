@@ -58,7 +58,7 @@
       </Pane>
       <Pane layoutX="713.0" layoutY="525.0" prefHeight="245.0" prefWidth="260.0" style="-fx-background-color: #ffc9a5;">
          <children>
-            <Button layoutX="24.0" layoutY="88.0" mnemonicParsing="false" style="-fx-background-color: #ffc9a5;" text="Add Books" textFill="#9f715f">
+            <Button layoutX="24.0" layoutY="88.0" mnemonicParsing="false" onAction="#switchtoaddbook" style="-fx-background-color: #ffc9a5;" text="Add Books" textFill="#9f715f">
                <font>
                   <Font size="34.0" />
                </font>
@@ -101,7 +101,7 @@
             <Font size="20.0" />
          </font>
       </TextField>
-      <Button layoutX="36.0" layoutY="36.0" mnemonicParsing="false" onAction="#switchtohome" text="&lt;" textFill="#8f6257">
+      <Button layoutX="36.0" layoutY="36.0" mnemonicParsing="false" onAction="#switchtohome" style="-fx-background-color: #8f6257;" text="&lt;" textFill="WHITE">
          <font>
             <Font size="32.0" />
          </font>
