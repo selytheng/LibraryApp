@@ -65,7 +65,7 @@
             <Font size="30.0" />
          </font>
       </Button>
-      <Button layoutX="909.0" layoutY="33.0" mnemonicParsing="false" style="-fx-background-color: rgba(255, 249, 93, 1);" text="LOG OUT">
+      <Button layoutX="909.0" layoutY="33.0" mnemonicParsing="false" onAction="#switchtohomep" style="-fx-background-color: rgba(255, 249, 93, 1);" text="LOG OUT">
          <font>
             <Font size="14.0" />
          </font>
