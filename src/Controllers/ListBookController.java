@@ -7,6 +7,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+
+import javafx.fxml.Initializable;
 import java.sql.SQLException;
 
 import com.mysql.cj.protocol.Resultset;
@@ -22,7 +24,6 @@ import java.sql.Statement;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -32,164 +33,187 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import javafx.scene.control.TextField;
+//
+//
+//
+//public class ListBookController implements Initializable {
+//    private PreparedStatement pst = null;
+//    private ResultSet rs = null;
+//    private ObservableList<BookList> data;
+//    @FXML
+//    private TableView<BookList> Bookdata;
+//    @FXML
+//    private TableColumn<BookList, String> namecol;
+//    @FXML
+//    private TableColumn<BookList, String> idcol;
+//
+//    @FXML
+//    private TableColumn<BookList, String> descol;
+//    @FXML
+//    private TableColumn<BookList, String> pubcol;
+//    @FXML
+//    private TableColumn<BookList, String> pagecol;
+//    @FXML
+//    private TableColumn<BookList, String> authorcol;
+//    @FXML
+//    private TextField txtName;
+//    @FXML
+//    private TextField txtDes;
+//    @FXML
+//    private TextField txtAuthor;
+//    @FXML
+//    private TextField txtPage;
+//    @FXML
+//    private TextField txtPub;
+//
+//    private Connection con = null;
+//
+//
+//    public ObservableList<BookList> getBooksList() throws SQLException {
+//        ObservableList<BookList> bookList = FXCollections.observableArrayList();
+//        try {
+//            Connection conn = DbConnect.getConnect2();
+//            String sql = "SELECT * FROM books";
+//            // Search Function
+////            String search = searchField.getText();
+////            if(search!=""){
+////                sql += " WHERE title LIKE '%" +search+ "%'";
+////            }
+//
+//            PreparedStatement statement = conn.prepareStatement(sql);
+//            ResultSet resultSet = statement.executeQuery();
+//            BookList books;
+//            while (resultSet.next()) {
+//                books = new BookList(resultSet.getString("ID"), resultSet.getString("Name"),
+//                        resultSet.getString("Description"), resultSet.getString("Author"), resultSet.getString("Page"),
+//                        resultSet.getString("Public"));
+//                bookList.add(books);
+//            }
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        return bookList;
+//
+//    }
+//
+//    public void showBooks() throws SQLException {
+//        ObservableList<BookList> list = getBooksList();
+//        idcol.setCellValueFactory(new PropertyValueFactory<BookList, String>("ID"));
+//        namecol.setCellValueFactory(new PropertyValueFactory<BookList, String>("Name"));
+//        descol.setCellValueFactory(new PropertyValueFactory<BookList, String>("Description"));
+//        authorcol.setCellValueFactory(new PropertyValueFactory<BookList, String>("Author"));
+//        pagecol.setCellValueFactory(new PropertyValueFactory<BookList, String>("Page"));
+//        pubcol.setCellValueFactory(new PropertyValueFactory<BookList, String>("Public"));
+//        Bookdata.setItems(list);
+//    }
+//
+//    @Override
+//    public void initialize(URL url, ResourceBundle resourceBundle) {
+//        try {
+//            showBooks();
+//        } catch (SQLException e) {
+//            throw new RuntimeException(e);
+//        }
+//    }
+//}
 
 
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class ListBookController implements Initializable {
-    private PreparedStatement pst = null;
-    private ResultSet rs = null;
-    private ObservableList<BookList> data;
+
     @FXML
     private TableView<BookList> Bookdata;
+
     @FXML
-    private TableColumn<BookList, String> namecol;
-    @FXML
-    private TableColumn<BookList, String> descol;
-    @FXML
-    private TableColumn<BookList, String> pubcol;
-    @FXML
-    private TableColumn<BookList, String> pagecol;
+    private Button adddata;
+
     @FXML
     private TableColumn<BookList, String> authorcol;
+
     @FXML
-    private TextField txtName;
+    private TableColumn<BookList, String> descol;
+
     @FXML
-    private TextField txtDes;
+    private TableColumn<BookList, String> idcol;
+
+    @FXML
+    private TableColumn<BookList, String> namecol;
+
+    @FXML
+    private TableColumn<BookList, String> pagecol;
+
+    @FXML
+    private TableColumn<BookList, String> pubcol;
+
     @FXML
     private TextField txtAuthor;
+
+    @FXML
+    private TextField txtDes;
+
+    @FXML
+    private TextField txtName;
+
     @FXML
     private TextField txtPage;
+
     @FXML
     private TextField txtPub;
 
-    private Connection con =null ;
-
-    public void ConnectToBook(){
-        try{
-            Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:/booklist","root","");
-            System.out.println("sucessfully connected yayyyy");
-        } catch (ClassNotFoundException ex) {
-            System.out.println("hikhik");
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }
-    }
-    // public void initialize(URL url, ResourceBundle rb) {
-    //     System.out.println("sucessfully connected yayyyy");
-    //     ConnectToBook();
-    //    setCellTable();
-    //    LoadDB();
-    //    data = FXCollections.observableArrayList();
-
-    // }
-
-    public void adddata(ActionEvent event){
-        String sql = "INSERT INTO `booklist`(`Name`, `Description`, `Author`, `Page`, `Public`) VALUES (?,?,?,?,?)";
-        String Name = txtName.getText();
-        String Description = txtDes.getText();
-        String Author = txtAuthor.getText();
-        String Page = txtPage.getText();
-        String Publish = txtPub.getText();
-        try
-        {
-            pst = con.prepareStatement(sql);
-            pst.setString(1, Name);
-            pst.setString(2, Description);
-            pst.setString(3, Author);
-            pst.setString(4, Page);
-            pst.setString(5, Publish);
-
-            int i = pst.executeUpdate();
-            if(i==1) System.out.println("Data insert succesfully");
-        }
-        catch(SQLException ex) {
-            Logger.getLogger(ListBookController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-
-    private void setCellTable() throws SQLException {
-        con = DbConnect.getConnect();
-
-        namecol.setCellValueFactory(new PropertyValueFactory<>("Name"));
-        descol.setCellValueFactory(new PropertyValueFactory<>("Description"));
-        authorcol.setCellValueFactory(new PropertyValueFactory<>("Author"));
-        pagecol.setCellValueFactory(new PropertyValueFactory<>("Page"));
-        pubcol.setCellValueFactory(new PropertyValueFactory<>("Publish"));
-    }
-
-    private void LoadDB(){
-        try{
-            DbConnect dc = new DbConnect();
-            Connection cn = dc.getConnect();
-            pst = con.prepareStatement("SELECT * FROM `booklist`");
-            rs = pst.executeQuery();
-            while (rs.next()){
-                data.add(new BookList(rs.getString(1),
-                        rs.getString(2),
-                        rs.getString(3),
-                        rs.getString(4),
-                        rs.getString(5)));
-
-            }
-        } catch (SQLException ex){
-            Logger.getLogger(ListBookController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        Bookdata.setItems(data);
-    }
-
-//    public void initialize(URL url, ResourceBundle rb){
-//        namecol.setCellValueFactory(new PropertyValueFactory<>("Name"));
-//        descol.setCellValueFactory(new PropertyValueFactory<>("Description"));
-//        authorcol.setCellValueFactory(new PropertyValueFactory<>("Author"));
-//        pagecol.setCellValueFactory(new PropertyValueFactory<>("Page"));
-//        pubcol.setCellValueFactory(new PropertyValueFactory<>("Publish"));
-//        try {
-//            DbConnect cn = new DbConnect();
-//            Connection cn1 = DbConnect.getConnect();
-//
-//            String sql = "SELECT * FROM `booklist` WHERE 1";
-//            Statement s = cn1.createStatement();
-//            ResultSet r = s.executeQuery(sql);
-//
-//            while (r.next()){
-//                data.add(new BookList(
-//                        r.getString("Name")
-//                        , r.getString("Description")
-//                        , r.getString("Author")
-//                        , r.getString("Page")
-//                        , r.getString("Publish")
-//                ));
-//                Bookdata.setItems(data);
+    public ObservableList<BookList> getBooksList() throws SQLException {
+        ObservableList<BookList> bookList = FXCollections.observableArrayList();
+        try {
+            Connection conn = DbConnect.getConnect2();
+            String sql = "SELECT * FROM BookList";
+            // Search Function
+//            String search = searchField.getText();
+//            if(search!=""){
+//                sql += " WHERE title LIKE '%" +search+ "%'";
 //            }
-//
-//        } catch (Exception e){
-//
-//        }
-//    }
 
+            PreparedStatement statement = conn.prepareStatement(sql);
+            ResultSet resultSet = statement.executeQuery();
+            BookList books;
+            while (resultSet.next()) {
+                books = new BookList(resultSet.getString("ID"), resultSet.getString("Name"),
+                        resultSet.getString("Description"), resultSet.getString("Author"), resultSet.getString("Page"),
+                        resultSet.getString("Public"));
+                bookList.add(books);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return bookList;
 
-
-
-
-
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
-    @FXML
-    public void switchtohome(ActionEvent event) throws IOException {
-        Parent root= FXMLLoader.load(getClass().getResource("HomePage.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
     }
+
+    public void showBooks() throws SQLException {
+        ObservableList<BookList> list = getBooksList();
+        idcol.setCellValueFactory(new PropertyValueFactory<BookList, String>("ID"));
+        namecol.setCellValueFactory(new PropertyValueFactory<BookList, String>("Name"));
+        descol.setCellValueFactory(new PropertyValueFactory<BookList, String>("Description"));
+        authorcol.setCellValueFactory(new PropertyValueFactory<BookList, String>("Author"));
+        pagecol.setCellValueFactory(new PropertyValueFactory<BookList, String>("Page"));
+        pubcol.setCellValueFactory(new PropertyValueFactory<BookList, String>("Public"));
+        Bookdata.setItems(list);
+    }
+
 
     @Override
-    public void initialize(URL arg0, ResourceBundle arg1) {
-        ConnectToBook();
-    //    setCellTable();
-       LoadDB();
-       data = FXCollections.observableArrayList();
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        try {
+            showBooks();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

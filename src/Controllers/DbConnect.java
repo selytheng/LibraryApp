@@ -27,16 +27,16 @@ public class DbConnect {
         private static Connection connection ;
         
         
-//        public static Connection getConnect (){
-//        try {
-//            connection = DriverManager.getConnection(String.format("jdbc:mysql://%s:%d/%s", HOST,PORT,DB_NAME),USERNAME,PASSWORD);
-//        } catch (SQLException ex) {
-//            Logger.getLogger(DbConnect.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//
-//            return  connection;
-//        }
-        public static Connection getConnect() throws SQLException {
+        public static Connection getConnect (){
+        try {
+            connection = DriverManager.getConnection(String.format("jdbc:mysql://%s:%d/%s", HOST,PORT,DB_NAME),USERNAME,PASSWORD);
+        } catch (SQLException ex) {
+            Logger.getLogger(DbConnect.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+            return  connection;
+        }
+        public static Connection getConnect2() throws SQLException {
             String url = "jdbc:mysql://localhost:3306/booklist";
             String username = "root";
             String password = "";
