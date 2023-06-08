@@ -21,7 +21,7 @@ public class DbConnect {
     
     private static String HOST = "127.0.0.1";
         private static int PORT = 3308;
-        private static String DB_NAME = "BookList";
+        private static String DB_NAME = "booklist";
         private static String USERNAME = "root";
         private static String PASSWORD = "";
         private static Connection connection ;
@@ -29,7 +29,7 @@ public class DbConnect {
         
         public static Connection getConnect (){
         try {
-            connection = DriverManager.getConnection(String.format("jdbc:mysql://localhost:3308/booklist"),USERNAME,PASSWORD);
+            connection = DriverManager.getConnection(String.format("jdbc:mysql://%s:%d/%s", HOST,PORT,DB_NAME),USERNAME,PASSWORD);
         } catch (SQLException ex) {
             Logger.getLogger(DbConnect.class.getName()).log(Level.SEVERE, null, ex);
         }
