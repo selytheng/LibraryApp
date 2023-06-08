@@ -22,6 +22,7 @@ import java.sql.Statement;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -34,7 +35,7 @@ import javafx.scene.control.TextField;
 
 
 
-public class ListBookController {
+public class ListBookController implements Initializable {
     private PreparedStatement pst = null;
     private ResultSet rs = null;
     private ObservableList<BookList> data;
@@ -74,15 +75,14 @@ public class ListBookController {
             ex.printStackTrace();
         }
     }
-    public void initialize(URL url, ResourceBundle rb) throws SQLException {
+    // public void initialize(URL url, ResourceBundle rb) {
+    //     System.out.println("sucessfully connected yayyyy");
+    //     ConnectToBook();
+    //    setCellTable();
+    //    LoadDB();
+    //    data = FXCollections.observableArrayList();
 
-        ConnectToBook();
-//        con = DbConnect.getConnect();
-//        setCellTable();
-//        LoadDB();
-//        data = FXCollections.observableArrayList();
-
-    }
+    // }
 
     public void adddata(ActionEvent event){
         String sql = "INSERT INTO `booklist`(`Name`, `Description`, `Author`, `Page`, `Public`) VALUES (?,?,?,?,?)";
@@ -183,5 +183,13 @@ public class ListBookController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+
+    @Override
+    public void initialize(URL arg0, ResourceBundle arg1) {
+        ConnectToBook();
+    //    setCellTable();
+       LoadDB();
+       data = FXCollections.observableArrayList();
     }
 }

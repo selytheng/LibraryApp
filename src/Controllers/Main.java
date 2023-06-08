@@ -11,7 +11,7 @@ import java.io.IOException;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("HomePage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ListBook.fxml"));
         Scene Scene1= new Scene(root);
         stage.setTitle("Welcome to Library App");
         stage.setScene(Scene1);
