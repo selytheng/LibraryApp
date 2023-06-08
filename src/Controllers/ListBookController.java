@@ -63,13 +63,24 @@ public class ListBookController {
 
     private Connection con =null ;
 
+    public void ConnectToBook(){
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:/booklist","root","");
+            System.out.println("sucessfully connected yayyyy");
+        } catch (ClassNotFoundException ex) {
+            System.out.println("hikhik");
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+    }
+    public void initialize(URL url, ResourceBundle rb) throws SQLException {
 
-    public void initialize(URL url, ResourceBundle rb){
-        con = DbConnect.getConnect();
-
-        setCellTable();
-        LoadDB();
-        data = FXCollections.observableArrayList();
+        ConnectToBook();
+//        con = DbConnect.getConnect();
+//        setCellTable();
+//        LoadDB();
+//        data = FXCollections.observableArrayList();
 
     }
 
@@ -97,7 +108,7 @@ public class ListBookController {
         }
     }
 
-    private void setCellTable(){
+    private void setCellTable() throws SQLException {
         con = DbConnect.getConnect();
 
         namecol.setCellValueFactory(new PropertyValueFactory<>("Name"));
@@ -119,6 +130,7 @@ public class ListBookController {
                         rs.getString(3),
                         rs.getString(4),
                         rs.getString(5)));
+
             }
         } catch (SQLException ex){
             Logger.getLogger(ListBookController.class.getName()).log(Level.SEVERE, null, ex);
