@@ -29,13 +29,21 @@ public class DbConnect {
         
         public static Connection getConnect (){
         try {
-            connection = DriverManager.getConnection(String.format("jdbc:mysql://%s:%d/%s", HOST,PORT,DB_NAME),USERNAME,PASSWORD);
+            connection = DriverManager.getConnection(String.format("jdbc:mysql://localhost:3308/booklist"),USERNAME,PASSWORD);
         } catch (SQLException ex) {
             Logger.getLogger(DbConnect.class.getName()).log(Level.SEVERE, null, ex);
         }
             
             return  connection;
         }
+
+    public static Connection getConnection() throws SQLException {
+        String url = "jdbc:mysql://localhost:3308/booklist";
+        String username = "root";
+        String password = "";
+        Connection connection = DriverManager.getConnection(url, username, password);
+        return connection;
+    }
         
         
         

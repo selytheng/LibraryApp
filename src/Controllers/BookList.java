@@ -1,6 +1,6 @@
 package Controllers;
 
-import java.sql.Date;
+import javafx.beans.property.StringProperty;
 
 public class BookList {
     String Name;
@@ -47,6 +47,5 @@ public class BookList {
     public void setPage(String Page){
         this.Page=Page;
     }
-
 
 }

@@ -61,7 +61,7 @@ public class ListBookController {
     String query = null;
 
 
-    public void initiatize(URL url, ResourceBundle rb){
+    public void initialize(URL url, ResourceBundle rb){
         con = DbConnect.getConnect();
         setCellTable();
         data = FXCollections.observableArrayList();
@@ -69,7 +69,7 @@ public class ListBookController {
     }
 
     public void adddata(ActionEvent event){
-        String sql = "INSERT INTO `booklist`(`Name`, `Description`, `Author`, `Page`, `Public`) VALUES ('?','?','?','?','?')";
+        String sql = "INSERT INTO `booklist`(`Name`, `Description`, `Author`, `Page`, `Public`) VALUES (?,?,?,?,?)";
         String Name = txtName.getText();
         String Description = txtDes.getText();
         String Author = txtAuthor.getText();
@@ -104,7 +104,7 @@ public class ListBookController {
 
     private void LoadDB(){
         try{
-            pst = con.prepareStatement("Select * from BookList");
+            pst = con.prepareStatement("SELECT * FROM `booklist`");
             rs = pst.executeQuery();
             while (rs.next()){
                 data.add(new BookList(rs.getString(1),
