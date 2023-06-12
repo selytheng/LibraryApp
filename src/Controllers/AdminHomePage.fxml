@@ -41,7 +41,7 @@
             <Image url="/image/im-home_page.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="899.0" layoutY="23.0" mnemonicParsing="false" onAction="#switchtohomep" style="-fx-background-color: rgba(255, 249, 93, 1);" text="LOG OUT">
+      <Button layoutX="899.0" layoutY="23.0" mnemonicParsing="false" style="-fx-background-color: rgba(255, 249, 93, 1);" text="LOG OUT">
          <font>
             <Font size="14.0" />
          </font>
