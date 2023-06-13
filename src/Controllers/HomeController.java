@@ -31,7 +31,7 @@ public class HomeController {
         stage.show();
     }
     public void switchtolistbook(ActionEvent event)throws IOException {
-        Parent root= FXMLLoader.load(getClass().getResource("ListBook.fxml"));
+        Parent root= FXMLLoader.load(getClass().getResource("BookList_user.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

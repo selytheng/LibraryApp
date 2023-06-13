@@ -1,51 +1,69 @@
 package Controllers;
 
-import javafx.beans.property.StringProperty;
-
 public class BookList {
-    String Name;
-    String Des;
-    String Author;
-    String Page;
-    String Publish;
 
-    public BookList(String Name, String Des, String Author, String Page, String Publish){
-        this.Name=Name;
-        this.Des=Des;
-        this.Author=Author;
-        this.Publish=Publish;
-        this.Page=Page;
+    private String ID;
+    private String Name;
+    private String Description;
+    private String Author;
+
+    public String getID() {
+        return ID;
     }
 
-    public String getName(){
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    public String getName() {
         return Name;
     }
-    public void setName(String Name){
-        this.Name=Name;
-    }
-    public String getDes(){
-        return Des;
-    }
-    public void setDes(String Des){
-        this.Des=Des;
-    }
-    public String getAuthor(){
-        return Author;
-    }
-    public void setAuthor(String Author){
-        this.Author=Author;
-    }
-    public String getPublish(){
-        return Publish;
-    }
-    public void setPublish(String Publish){
-        this.Publish=Publish;
-    }
-    public String getPage(){
-        return Page;
-    }
-    public void setPage(String Page){
-        this.Page=Page;
+
+    public void setName(String name) {
+        Name = name;
     }
 
+    public String getDescription() {
+        return Description;
+    }
+
+    public void setDescription(String description) {
+        Description = description;
+    }
+
+    public String getAuthor() {
+        return Author;
+    }
+
+    public void setAuthor(String author) {
+        Author = author;
+    }
+
+    public String getPage() {
+        return Page;
+    }
+
+    public void setPage(String page) {
+        Page = page;
+    }
+
+    public String getPublic() {
+        return Public;
+    }
+
+    public void setPublic(String aPublic) {
+        Public = aPublic;
+    }
+
+    private String Page;
+    private String Public;
+
+    public BookList(String id, String name, String description, String author, String page, String aPublic) {
+        ID = id;
+        Name = name;
+        Description = description;
+        Author = author;
+        Page = page;
+        Public = aPublic;
+    }
 }
