@@ -3,7 +3,6 @@ package Controllers;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -14,7 +13,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.awt.print.Book;
@@ -129,21 +127,6 @@ public class BookList_usercontroller implements Initializable  {
 
         });
     }
-    private void setcellvaluetableclick(){
-        Booktable.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent mouseEvent) {
-                BookList bl = Booktable.getItems().get(Booktable.getSelectionModel().getSelectedIndex());
-                colid.setText(bl.getID());
-                colname.setText(bl.getName());
-                coldes.setText(bl.getDescription());
-                colauthor.setText(bl.getAuthor());
-                colpage.setText(bl.getPage());
-                colpub.setText(bl.getPublic());
-
-            }
-        });
-    }
 
     public void switchtohome(ActionEvent event) throws IOException {
         Parent root= FXMLLoader.load(getClass().getResource("HomePage.fxml"));
@@ -160,7 +143,6 @@ public class BookList_usercontroller implements Initializable  {
             bookdata = FXCollections.observableArrayList();
             setCellTable();
             LoadData();
-            setcellvaluetableclick();
             Searchbook();
         } catch (SQLException e) {
             throw new RuntimeException(e);

@@ -15,7 +15,7 @@
          <columns>
             <TableColumn fx:id="idcol" prefWidth="105.66665649414062" text="ID" />
             <TableColumn fx:id="namecol" prefWidth="148.33340454101562" text="Name" />
-            <TableColumn fx:id="descol" prefWidth="128.6666259765625" text="Discription" />
+            <TableColumn fx:id="descol" prefWidth="128.6666259765625" text="Category" />
             <TableColumn fx:id="authorcol" prefWidth="90.0001220703125" text="Author" />
             <TableColumn fx:id="pagecol" minWidth="5.666748046875" prefWidth="69.0" text="Page" />
             <TableColumn fx:id="pubcol" prefWidth="59.0" text="Publish" />

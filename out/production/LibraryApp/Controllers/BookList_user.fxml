@@ -15,7 +15,7 @@
          <columns>
             <TableColumn fx:id="colid" prefWidth="118.0" text="ID" />
             <TableColumn fx:id="colname" prefWidth="215.3333740234375" text="Name" />
-            <TableColumn fx:id="coldes" prefWidth="221.66668701171875" text="Discription" />
+            <TableColumn fx:id="coldes" prefWidth="221.66668701171875" text="Category" />
             <TableColumn fx:id="colauthor" minWidth="0.0" prefWidth="136.33334350585938" text="Author" />
             <TableColumn fx:id="colpage" minWidth="5.666748046875" prefWidth="103.333251953125" text="Page" />
             <TableColumn fx:id="colpub" prefWidth="164.99981689453125" text="Publish" />

@@ -1,11 +1,7 @@
 package Controllers;
 
-import java.awt.print.Book;
-import java.io.PushbackInputStream;
 import java.net.URL;
-import java.security.PublicKey;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
@@ -13,15 +9,11 @@ import javafx.event.EventHandler;
 import javafx.fxml.Initializable;
 import java.sql.SQLException;
 
-import com.mysql.cj.protocol.Resultset;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import java.io.IOException;
 
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.sql.Statement;
 
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
