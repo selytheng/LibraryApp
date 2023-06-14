@@ -190,7 +190,7 @@ public class BorrowListcontroller implements Initializable {
 
     @FXML
     void switchtohome(ActionEvent event) throws IOException {
-        Parent root= FXMLLoader.load(getClass().getResource("../Page/ADMIN_CONTROLLER.fxml"));
+        Parent root= FXMLLoader.load(getClass().getResource("Adminpage.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
