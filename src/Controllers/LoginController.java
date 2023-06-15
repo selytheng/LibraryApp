@@ -8,12 +8,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.control.TextField;
+import javafx.scene.control.PasswordField;
 import java.io.IOException;
 public class LoginController {
     @FXML
     TextField userid;
     @FXML
-    TextField passid;
+    private PasswordField passid;
     private Stage stage;
     private Scene scene;
 
