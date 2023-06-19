@@ -53,5 +53,12 @@ public class AdminHomePage {
         stage.setScene(scene);
         stage.show();
     }
+//    public void switchtoAdminList(ActionEvent event) throws IOException {
+//        Parent root = FXMLLoader.load(getClass().getResource("AdminList.fxml"));
+//        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+//        scene = new Scene(root);
+//        stage.setScene(scene);
+//        stage.show();
+//    }
 
 }
