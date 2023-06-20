@@ -33,7 +33,7 @@
       </Pane>
       <Pane layoutX="46.0" layoutY="384.0" prefHeight="130.0" prefWidth="343.0" style="-fx-background-color: #ffc9a5; -fx-border-color: #ffffff;">
          <children>
-            <Button layoutX="56.0" layoutY="32.0" mnemonicParsing="false" onAction="#switchtoadminlist" style="-fx-background-color: #ffc9a5;" text="Admin' s List" textFill="#9f715f">
+            <Button layoutX="56.0" layoutY="32.0" mnemonicParsing="false" onAction="#switchtoAdminList" style="-fx-background-color: #ffc9a5;" text="Admin' s List" textFill="#9f715f">
                <font>
                   <Font size="32.0" />
                </font>

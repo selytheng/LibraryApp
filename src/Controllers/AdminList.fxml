@@ -15,8 +15,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.layout.AnchorPane?>
-
 
 <AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdminListController">
    <children>
@@ -71,44 +69,43 @@
          <center>
             <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <TableView fx:id="adminTable" layoutX="27.0" layoutY="85.0" prefHeight="509.0" prefWidth="723.0">
+                  <TableView fx:id="AdminTable" layoutX="27.0" layoutY="85.0" prefHeight="509.0" prefWidth="723.0">
                     <columns>
-                      <TableColumn fx:id="colNo" prefWidth="78.39998775720596" text="No" />
                       <TableColumn fx:id="colName" prefWidth="118.39999389648438" text="Name" />
                         <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="156.79995727539062" text="Email" />
                         <TableColumn fx:id="colID" minWidth="0.0" prefWidth="148.0" text="ID" />
                         <TableColumn fx:id="colDepartment" minWidth="0.0" prefWidth="141.60003662109375" text="Department" />
-                        <TableColumn fx:id="colDuties" minWidth="0.0" prefWidth="76.7999267578125" text="Duties" />
+                        <TableColumn fx:id="colDuties" minWidth="0.0" prefWidth="156.5999755859375" text="Duties" />
                     </columns>
                   </TableView>
                   <Button layoutX="780.0" layoutY="569.0" mnemonicParsing="false" onAction="#adminRemove" prefHeight="25.0" prefWidth="115.0" text="Remove" />
                   <Button layoutX="781.0" layoutY="483.0" mnemonicParsing="false" onAction="#adminInsert" prefHeight="25.0" prefWidth="114.0" style="-fx-border-radius: 20px;" text="Insert" />
                   <Button layoutX="780.0" layoutY="526.0" mnemonicParsing="false" onAction="#adminUpdate" prefHeight="25.0" prefWidth="115.0" text="Update" />
-                  <TextField layoutX="763.0" layoutY="140.0" />
+                  <TextField fx:id="name" layoutX="763.0" layoutY="140.0" />
                   <Label layoutX="763.0" layoutY="113.0" prefHeight="17.0" prefWidth="40.0" text="Name" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="763.0" layoutY="200.0" />
+                  <TextField fx:id="email" layoutX="763.0" layoutY="200.0" />
                   <Label layoutX="763.0" layoutY="173.0" prefHeight="17.0" prefWidth="40.0" text="Email" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="763.0" layoutY="260.0" />
+                  <TextField fx:id="id" layoutX="763.0" layoutY="260.0" />
                   <Label layoutX="763.0" layoutY="233.0" prefHeight="17.0" prefWidth="40.0" text="ID" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="763.0" layoutY="322.0" />
+                  <TextField fx:id="dep" layoutX="763.0" layoutY="322.0" />
                   <Label layoutX="763.0" layoutY="295.0" prefHeight="17.0" prefWidth="69.0" text="Department" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="763.0" layoutY="385.0" />
+                  <TextField fx:id="dt" layoutX="763.0" layoutY="385.0" />
                   <Label layoutX="763.0" layoutY="358.0" prefHeight="17.0" prefWidth="40.0" text="Duties" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="12.0" />
