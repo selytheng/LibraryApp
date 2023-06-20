@@ -28,6 +28,9 @@ public class BorrowListcontroller implements Initializable {
     private TableView<StudentList> StudentTable;
 
     @FXML
+    private TableColumn<StudentList, String> colno;
+
+    @FXML
     private TableColumn<StudentList, String> colbid;
 
     @FXML
@@ -47,6 +50,9 @@ public class BorrowListcontroller implements Initializable {
 
     @FXML
     private TextField txtSeachStudent;
+
+    @FXML
+    private TextField txtno;
 
     @FXML
     private TextField txtbid;
@@ -75,6 +81,7 @@ public class BorrowListcontroller implements Initializable {
 
 
     private void setStudentTable(){
+        colno.setCellValueFactory(new PropertyValueFactory<>("No"));
         colsid.setCellValueFactory(new PropertyValueFactory<>("StudentID"));
         colsname.setCellValueFactory(new PropertyValueFactory<>("StudentName"));
         colbid.setCellValueFactory(new PropertyValueFactory<>("BookID"));
@@ -84,7 +91,7 @@ public class BorrowListcontroller implements Initializable {
     }
     private void LoadStudentData(){
         try {
-            pst = con.prepareStatement("SELECT * FROM `studentboorrow`");
+            pst = con.prepareStatement("SELECT * FROM `studentborrow`");
             rs = pst.executeQuery();
             while (rs.next()){
                 studentdata.add(new StudentList(
@@ -93,7 +100,8 @@ public class BorrowListcontroller implements Initializable {
                         rs.getString(3),
                         rs.getString(4),
                         rs.getString(5),
-                        rs.getString(6)));
+                        rs.getString(6),
+                        rs.getString(7)));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -110,7 +118,8 @@ public class BorrowListcontroller implements Initializable {
     }
     @FXML
     void addstudent(ActionEvent event) throws SQLException {
-        String sql = "INSERT INTO `studentboorrow`(`StudentID`, `StudentName`, `BookID`, `BookName`, `BorrowDate`, `ReturnDate`) VALUES (?,?,?,?,?,?)";
+        String sql = "INSERT INTO `studentborrow`(`No`, `StudentID`, `StudentName`, `BookID`, `BookName`, `BorrowDate`, `ReturnDate`) VALUES (?,?,?,?,?,?,?)";
+        String no = txtno.getText();
         String sid = txtsid.getText();
         String sname = txtsname.getText();
         String bid = txtbid.getText();
@@ -120,12 +129,13 @@ public class BorrowListcontroller implements Initializable {
 
         try {
             pst=con.prepareStatement(sql);
-            pst.setString(1, sid);
-            pst.setString(2, sname);
-            pst.setString(3, bid);
-            pst.setString(4, bname);
-            pst.setString(5, borrowd);
-            pst.setString(6, returnd);
+            pst.setString(1, no);
+            pst.setString(2, sid);
+            pst.setString(3, sname);
+            pst.setString(4, bid);
+            pst.setString(5, bname);
+            pst.setString(6, borrowd);
+            pst.setString(7, returnd);
 
             int i = pst.executeUpdate();
             if(i == 1){
@@ -141,9 +151,9 @@ public class BorrowListcontroller implements Initializable {
     }
     @FXML
     void deletestudent(ActionEvent event) throws SQLException {
-        String sql = "DELETE FROM `studentboorrow` WHERE `StudentID`=?";
+        String sql = "DELETE FROM `studentborrow` WHERE `No`=?";
         pst = con.prepareStatement(sql);
-        String DelID = txtsid.getText();
+        String DelID = txtno.getText();
 
         try {
             pst.setString(1, DelID);
@@ -158,21 +168,23 @@ public class BorrowListcontroller implements Initializable {
     }
     @FXML
     void updatestudent(ActionEvent event) {
-        String sql = "UPDATE `studentboorrow` SET `StudentName`=?,`BookID`=?,`BookName`=?,`BorrowDate`=?,`ReturnDate`=? WHERE `StudentID`=?";
+        String sql = "UPDATE `studentborrow` SET `StudentID`=?,`StudentName`=?,`BookID`=?,`BookName`=?,`BorrowDate`=?,`ReturnDate`=? WHERE `No`=?";
         try {
             pst = con.prepareStatement(sql);
+            String Upno = txtno.getText();
             String Upsid = txtsid.getText();
             String Upsname = txtsname.getText();
             String Upbid = txtbid.getText();
             String Upbanme = txtbname.getText();
             String Upborrow = txtborrow.getText();
             String Upreturn = txtreturn.getText();
-            pst.setString(6, Upsid);
-            pst.setString(1, Upsname);
-            pst.setString(2, Upbid);
-            pst.setString(3, Upbanme);
-            pst.setString(4, Upborrow);
-            pst.setString(5, Upreturn);
+            pst.setString(1, Upsid);
+            pst.setString(2, Upsname);
+            pst.setString(3, Upbid);
+            pst.setString(4, Upbanme);
+            pst.setString(5, Upborrow);
+            pst.setString(6, Upreturn);
+            pst.setString(7, Upno);
 
             int i = pst.executeUpdate();
             if(i == 1){
@@ -201,6 +213,7 @@ public class BorrowListcontroller implements Initializable {
             @Override
             public void handle(MouseEvent mouseEvent) {
                 StudentList sl = StudentTable.getItems().get(StudentTable.getSelectionModel().getSelectedIndex());
+                txtno.setText(sl.getNo());
                 txtsid.setText(sl.getStudentID());
                 txtsname.setText(sl.getStudentName());
                 txtbid.setText(sl.getBookID());
@@ -239,7 +252,8 @@ public class BorrowListcontroller implements Initializable {
                                 rs.getString(3),
                                 rs.getString(4),
                                 rs.getString(5),
-                                rs.getString(6)));
+                                rs.getString(6),
+                                rs.getString(7)));
                     }
                 } catch (SQLException ex) {
                     throw new RuntimeException(ex);

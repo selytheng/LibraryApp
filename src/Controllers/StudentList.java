@@ -48,13 +48,21 @@ public class StudentList {
     public void setReturnDate(String returnDate) {
         ReturnDate = returnDate;
     }
-
+    public String getNo() {
+        return No;
+    }
+    public void setNo(String no){
+        No = no ;
+    }
+    String No;
     String StudentID;
+
     String StudentName;
     String BookID;
     String BookName;
 
-    public StudentList(String studentID, String studentName, String bookID, String bookName, String borrowDate, String returnDate) {
+    public StudentList(String no, String studentID, String studentName, String bookID, String bookName, String borrowDate, String returnDate) {
+        No = no;
         StudentID = studentID;
         StudentName = studentName;
         BookID = bookID;
