@@ -99,7 +99,8 @@ public class AdminListController implements Initializable {
                         rs.getString(1),
                         rs.getString(2),
                         rs.getString(3),
-                        rs.getString(4)));
+                        rs.getString(4),
+                        rs.getString(5)));
 
 
             }
@@ -213,12 +214,12 @@ public class AdminListController implements Initializable {
 
     private void setcellvaluetableclick(){
         AdminTable.setOnMouseClicked(mouseEvent -> {
-            AdminTableList sl = AdminTable.getItems().get(AdminTable.getSelectionModel().getSelectedIndex());
-            name.setText(sl.getColName());
-            email.setText(sl.getColEmail());
-            id.setText(sl.getColID());
-           dep.setText(sl.getColDepartment());
-           dt.setText(sl.getColDuties());
+            AdminTableList ATL = AdminTable.getItems().get(AdminTable.getSelectionModel().getSelectedIndex());
+            name.setText(ATL.getName());
+            email.setText(ATL.getEmail());
+            id.setText(ATL.getID());
+           dep.setText(ATL.getDepartment());
+           dt.setText(ATL.getDuties());
 
 
         });

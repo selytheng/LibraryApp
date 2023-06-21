@@ -2,61 +2,50 @@ package Controllers;
 
 public class AdminTableList {
 
-    private String colName;
-    private String colEmail;
-    private String colID;
-    private String colDepartment;
-    private String colDuties;
+    private String Name;
+    private String Email;
+    private String ID;
+    private String Department;
+    private String Duties;
 
-
-
-    public String getColName() {
-        return colName;
+    public String getName() {
+        return Name;
+    }
+    public String getEmail() {
+        return Email;
+    }
+    public String getID() {
+        return ID;
+    }
+    public String getDepartment() {
+        return Department;
+    }
+    public String getDuties() {
+        return Duties;
+    }
+    public void setName(String name) {
+        Name = name;
+    }
+    public void setEmail(String email) {
+        Email = email;
+    }
+    public void setID(String iD) {
+        ID = iD;
+    }
+    public void setDepartment(String department) {
+        Department = department;
+    }
+    public void setDuties(String duties) {
+        Duties = duties;
     }
 
-    public void setColName(String colName) {
-        this.colName = colName;
-    }
+    public AdminTableList( String Name, String Email, String ID, String Department, String Duties) {
 
-    public String getColEmail() {
-        return colEmail;
-    }
-
-    public void setColEmail(String colEmail) {
-        this.colEmail = colEmail;
-    }
-
-    public String getColID() {
-        return colID;
-    }
-
-    public void setColID(String colID) {
-        this.colID = colID;
-    }
-
-    public String getColDepartment() {
-        return colDepartment;
-    }
-
-    public void setColDepartment(String colDepartment) {
-        this.colDepartment = colDepartment;
-    }
-
-    public String getColDuties() {
-        return colDuties;
-    }
-
-    public void setColDuties(String colDuties) {
-        this.colDuties = colDuties;
-    }
-
-    public AdminTableList( String colName, String colEmail, String colID, String colDepartment) {
-
-        this.colName = colName;
-        this.colEmail = colEmail;
-        this.colID = colID;
-        this.colDepartment = colDepartment;
-        this.colDuties = colDuties;
+        this.Name = Name;
+        this.Email = Email;
+        this.ID = ID;
+        this.Department = Department;
+        this.Duties = Duties;
     }
 
 
