@@ -172,7 +172,7 @@ public class AdminListController implements Initializable {
     }
     @FXML
     void adminUpdate(ActionEvent event) {
-        String sql = "UPDATE `adminlist` SET `Name`=?,`Email`=?,`ID`=?,`Department`=?,`Duties`=? WHERE `ID`=?";
+        String sql = "UPDATE `adminlist` SET `Name`=?,`Email`=?,`Department`=?,`Duties`=? WHERE `ID`=?";
         try {
             pst = con.prepareStatement(sql);
             String Upname = name.getText();
@@ -183,9 +183,9 @@ public class AdminListController implements Initializable {
 
             pst.setString(1, Upname);
             pst.setString(2, Upemail);
-            pst.setString(3, Upid);
-            pst.setString(4, Updep);
-            pst.setString(5, Updt);
+            pst.setString(3, Updep);
+            pst.setString(4, Updt);
+            pst.setString(5, Upid);
 
 
             int i = pst.executeUpdate();
