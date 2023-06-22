@@ -230,10 +230,10 @@ public class BorrowListcontroller implements Initializable {
             if (txtSeachStudent.getText().equals("")) Refresh();
             else {
                 cleartextstudentinfo();
-                String sql = "SELECT * FROM `studentboorrow` WHERE `StudentID`=?"
-                        + "UNION SELECT * FROM `studentboorrow` WHERE `StudentName`=?"
-                        + "UNION SELECT * FROM `studentboorrow` WHERE `BookID`=?"
-                        + "UNION SELECT * FROM `studentboorrow` WHERE `BookName`=?";
+                String sql = "SELECT * FROM `studentborrow` WHERE `StudentID`=?"
+                        + "UNION SELECT * FROM `studentborrow` WHERE `StudentName`=?"
+                        + "UNION SELECT * FROM `studentborrow` WHERE `BookID`=?"
+                        + "UNION SELECT * FROM `studentborrow` WHERE `BookName`=?";
                 String Sid = txtSeachStudent.getText();
                 String Sname = txtSeachStudent.getText();
                 String Bid = txtSeachStudent.getText();
